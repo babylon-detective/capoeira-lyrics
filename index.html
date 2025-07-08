@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics with Translation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scroll-indicator {
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #ffc;
+            border-radius: 5px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns-container">
+            <div class="lyrics-column">
+                <div class="song-selector">
+                    <select id="songSelect">
+                        <option value="" disabled selected>Choose an Author...</option>
+                        <option value="Author 1">Author 1</option>
+                    </select>
+                </div>
+                
+                <div class="content-container">
+                    <!-- Lyrics will be loaded here dynamically -->
+                </div>
+            </div>
+            
+            <div class="translation-column">
+                <div class="language-selector">
+                    <select id="languageSelect">
+                        <option value="" disabled selected>Choose language...</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+                
+                <div class="content-container">
+                    <!-- Translations will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+

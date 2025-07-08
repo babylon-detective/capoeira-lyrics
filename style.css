@@ -1,0 +1,143 @@
+/* Selector styling (unified for both columns) */
+.song-selector,
+.language-selector {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.song-selector select,
+.language-selector select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+}
+
+.song-selector select:hover,
+.language-selector select:hover {
+    border-color: #999;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-y: auto;
+    min-height: calc(100vh - 200px);
+    scrollbar-width: thick;
+    scrollbar-color: #999 #f9f9f9;
+}
+
+.columns-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.columns-container::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 6px;
+}
+
+/* Column styling */
+.lyrics-column,
+.translation-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+/* Heading styles */
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+/* Lyrics text styling */
+p {
+    line-height: 1.6;
+    white-space: pre-line;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.song-section,
+.translation-section {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Song type styling */
+.song-type {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Error styling */
+.error {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #d32f2f;
+    margin: 10px 0;
+}
+
+/* Loading styling */
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .columns-container {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 0;
+    }
+    
+    .lyrics-column,
+    .translation-column {
+        min-width: 90%;
+        scroll-snap-align: center;
+        margin: 0 5%;
+        flex-shrink: 0;
+    }
+}

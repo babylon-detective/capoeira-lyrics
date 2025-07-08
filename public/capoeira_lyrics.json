@@ -1,0 +1,1005 @@
+{
+    "songs": [
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "LADAINHA",
+        "title": {
+          "português": "EU VOU LER O BEABÁ",
+          "english": "I WILL READ THE ABC",
+          "español": "VOY A LEER EL ABC"
+        },
+        "lyrics": {
+          "português": [
+            "Eu vou ler o beabá|",
+            "Eu vou ler o beabá|",
+            "O beabá do berimbau|",
+            "A cabaça e o caxixi, colega velho|",
+            "Eum pedaço de pau|",
+            "Amoeda e o arame, colega velho|",
+            "Aí está o berimbau|",
+            "Berimbau é um instrumento|",
+            "Berimbau é um instrumento|",
+            "Que toca numa corda só|",
+            "Pra tocar São Bento Grande, colega meu|",
+            "Toca Angola em dó maior|",
+            "Agora acabei de crer, colega meu|",
+            "Berimbau é o maior|",
+            "Camaradinho|"
+          ],
+          "translations": {
+            "english": [
+              "I will read the ABC|",
+              "I will read the ABC|",
+              "The ABC of the berimbau|",
+              "The gourd and the caxixi, old friend|",
+              "A piece of wood|",
+              "The coin and the wire, old friend|",
+              "There is the berimbau|",
+              "Berimbau is an instrument|",
+              "Berimbau is an instrument|",
+              "Played with only one string|",
+              "To play São Bento Grande, my friend|",
+              "To Plays Angola in C major|",
+              "Now Iam convinced, my friend,|",
+              "Berimbau is the greatest|",
+              "My friend|"
+            ],
+            "español": [
+              "Voy a leer el ABC|",
+              "Voy a leer el ABC|",
+              "El ABC del berimbau|",
+              "La calabaza y el caxixi, amigo viejo|",
+              "Un pedazo de madera|",
+              "La moneda y el alambre, amigo viejo|",
+              "Ahí está el berimbau|",
+              "El berimbau es un instrumento|",
+              "El berimbau es un instrumento|",
+              "Que toca en una sola cuerda|",
+              "Para tocar São Bento Grande, amigo mío|",
+              "Toca Angola en do mayor|",
+              "Ahora he terminado de creer, amigo mío|",
+              "El berimbau es el más grande|",
+              "Camaradito|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "LOUVAÇÃO",
+        "title": {
+          "português": "",
+          "english": "",
+          "español": ""
+        },
+        "lyrics": {
+          "português": [
+            "Viva meu Deus|",
+            "^Iê, viva meu Deus camará|",
+            "Viva meu Mestre|",
+            "^Iê, viva meu Mestre, camará|",
+            "A capoeira|",
+            "^Iê, a capoeira, camará|",
+            "Joga aqui pra lá|",
+            "^Ié, joga aqui pra lá, camará|",
+            "Joga aqui pra cá|",
+            "^Iê, joga aqui pra cá, camará|",
+            "Ferro de furar|",
+            "^Iê, ferro de furar, camará|",
+            "Goma de engomar|",
+            "^Iê, goma de engomar, camará|",
+            "Menino é bom|",
+            "^Iê, menino é bom, camará|",
+            "E cabeceira|",
+            "^Iê, é cabeceira, camará|",
+            "Jogo de mandinga|",
+            "^Iê, jogo de mandinga, camará|"
+          ],
+          "translations": {
+            "english": [
+              "Long live my God|",
+              "^Iê, long live my God, comrade|",
+              "Long live my Master|",
+              "^Iê, long live my Master, comrade|",
+              "The capoeira|",
+              "^Iê, the capoeira, comrade|",
+              "Play here and there|",
+              "^Iê, play here and there, comrade|",
+              "Play here and here|",
+              "^Iê, play here and here, comrade|",
+              "Iron to pierce|",
+              "^Iê, iron to pierce, comrade|",
+              "Starch to iron|",
+              "^Iê, starch to iron, comrade|",
+              "The boy is good|",
+              "^Iê, the boy is good, comrade|",
+              "And headrest|",
+              "^Iê, and headrest, comrade|",
+              "Game of mandinga|",
+              "^Iê, game of mandinga, comrade|"
+            ],
+            "español": [
+              "Viva mi Dios|",
+              "^Iê, viva mi Dios, camarada|",
+              "Viva mi Maestro|",
+              "^Iê, viva mi Maestro, camarada|",
+              "La capoeira|",
+              "^Iê, la capoeira, camarada|",
+              "Juega aquí y allá|",
+              "^Iê, juega aquí y allá, camarada|",
+              "Juega aquí y aquí|",
+              "^Iê, juega aquí y aquí, camarada|",
+              "Hierro para perforar|",
+              "^Iê, hierro para perforar, camarada|",
+              "Almidón para planchar|",
+              "^Iê, almidón para planchar, camarada|",
+              "El niño es bueno|",
+              "^Iê, el niño es bueno, camarada|",
+              "Y cabecera|",
+              "^Iê, y cabecera, camarada|",
+              "Juego de mandinga|",
+              "^Iê, juego de mandinga, camarada|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "CORRIDO",
+        "title": {
+          "português": "QUANDO A MARÉ VAZAR",
+          "english": "WHEN THE TIDE RECEDES",
+          "español": "CUANDO LA MAREA BAJE"
+        },
+        "lyrics": {
+          "português": [
+            "Quando a maré vazar|",
+            "Vou ver Juliana|",
+            "Vou ver Juliana, é|",
+            "Vou ver Juliana|",
+            "^Quando a maré vazar|",
+            "^Vou ver Juliana|",
+            "^Vou ver Juliana, é|",
+            "^Vou ver Juliana|",
+            "Quando a maré vazar|",
+            "Vou ver Juliana|",
+            "Vou ver Juliana, é|",
+            "Vou ver Juliana|",
+            "^Quando a maré vazar|",
+            "^Vou ver Juliana|",
+            "^Vou ver Juliana, é|",
+            "^Vou ver Juliana|",
+            "Se quiser me ver|",
+            "Bota seu navio no mar|",
+            "Vem aqui pra Puerto Rico|",
+            "Para a gente vadiar|",
+            "^Quando a maré vazar|",
+            "^Vou ver Juliana|",
+            "^Vou ver Juliana, é|",
+            "^Vou ver Juliana...|"
+          ],
+          "translations": {
+            "english": [
+              "When the tide recedes|",
+              "I'll see Juliana|",
+              "I'll see Juliana, hey|",
+              "I'll see Juliana|",
+              "^When the tide recedes|",
+              "^I'll see Juliana|",
+              "^I'll see Juliana, hey|",
+              "^I'll see Juliana|",
+              "When the tide recedes|",
+              "I'll see Juliana|",
+              "I'll see Juliana, hey|",
+              "I'll see Juliana|",
+              "^When the tide recedes|",
+              "^I'll see Juliana|",
+              "^I'll see Juliana, hey|",
+              "^I'll see Juliana|",
+              "If you want to see me|",
+              "Put your ship in the sea|",
+              "Come here to Puerto Rico|",
+              "For us to hang out|",
+              "^When the tide recedes|",
+              "^I'll see Juliana|",
+              "^I'll see Juliana, hey|",
+              "^I'll see Juliana...|"
+            ],
+            "español": [
+              "Cuando la marea baje|",
+              "Veré a Juliana|",
+              "Veré a Juliana, eh|",
+              "Veré a Juliana|",
+              "^Cuando la marea baje|",
+              "^Veré a Juliana|",
+              "^Veré a Juliana, eh|",
+              "^Veré a Juliana|",
+              "Cuando la marea baje|",
+              "Veré a Juliana|",
+              "Veré a Juliana, eh|",
+              "Veré a Juliana|",
+              "^Cuando la marea baje|",
+              "^Veré a Juliana|",
+              "^Veré a Juliana, eh|",
+              "^Veré a Juliana|",
+              "Si quieres verme|",
+              "Pon tu barco en el mar|",
+              "Ven aquí a Puerto Rico|",
+              "Para que pasemos el rato|",
+              "^Cuando la marea baje|",
+              "^Veré a Juliana|",
+              "^Veré a Juliana, eh|",
+              "^Veré a Juliana...|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "CORRIDO",
+        "title": {
+          "português": "JOGO DE DENTRO",
+          "english": "INSIDE GAME",
+          "español": "JUEGO DE ADENTRO"
+        },
+        "lyrics": {
+          "português": [
+            "Jogo de dentro, jogo de fora|",
+            "Olha, jogo bonito esse jogo de Angola|",
+            "^Jogo de dentro, jogo de fora|",
+            "Que coisa linda esse jogo de Angola|",
+            "^Jogo de dentro, jogo de fora|",
+            "Ai que jogo bonito esso jogo de Angola|",
+            "^Jogo de dentro, jogo de fora|",
+            "Olha jogo bonito, esse jogo de Angola|",
+            "^Jogo de dentro, jogo de fora|",
+            "Olha o jogo de fora, olha o jogo de dentro|",
+            "^Jogo de dentro, jogo de fora|",
+            "Ai, que coisa linda esse jogo de Angola|",
+            "^Jogo de dentro, jogo de fora...|"
+          ],
+          "translations": {
+            "english": [
+              "Inside game, outside game|",
+              "Look, beautiful game of Angola|",
+              "^Inside game, outside game|",
+              "What a beautiful game of Angola|",
+              "^Inside game, outside game|",
+              "What a beautiful game of Angola|",
+              "^Inside game, outside game|",
+              "Look, beautiful game of Angola|",
+              "^Inside game, outside game|",
+              "Look, outside game, look, inside game|",
+              "^Inside game, outside game|",
+              "What a beautiful game of Angola|",
+              "^Inside game, outside game...|"
+            ],
+            "español": [
+              "Juego de adentro, juego de afuera|",
+              "Mira, hermoso juego de Angola|",
+              "^Juego de adentro, juego de afuera|",
+              "Qué cosa linda ese juego de Angola|",
+              "^Juego de adentro, juego de afuera|",
+              "Ai que hermoso juego de Angola|",
+              "^Juego de adentro, juego de afuera|",
+              "Mira hermoso, ese juego de Angola|",
+              "^Juego de adentro, juego de afuera|",
+              "Mira el juego de afuera, mira el juego de adentro|",
+              "^Juego de adentro, juego de afuera|",
+              "Ai, qué cosa linda ese juego de Angola|",
+              "^Juego de adentro, juego de afuera...|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "CORRIDO",
+        "title": { 
+          "português": "CAMUNGERÊ",
+          "english": "CAMUNGERE",
+          "español": "CAMUNGERE"
+        },
+        "lyrics": {
+          "português": [
+            "Camungerê como tá, como tá?|",
+            "^Camungerê|",
+            "Como vai vosmicê?|",
+            "^Camungerê|",
+            "Eu vou bem de saúde|",
+            "^Camungerê|",
+            "Para mim é um prazer|",
+            "^Camungerê|",
+            "Como tá, como tá?|",
+            "^Camungerê|",
+            "Como vai vosmicê?|",
+            "^Camungerê|",
+            "Eu vou bem de saúde|",
+            "^Camungerê|",
+            "Para mim é um prazer|",
+            "^Camungerê|"
+          ],
+                      "translations": {
+              "english": [
+                "Camungerê, how are you, how are you?|", 
+                "^Camungerê|",
+                "How are you doing?|", 
+                "^Camungerê|",
+                "My health is fine|",
+                "^Camungerê|",
+                "It's my pleasure|",
+                "^Camungerê|",
+                "How are you, how are you?|",
+                "^Camungerê|",
+                "How are you doing?|",  
+                "^Camungerê|",
+                "My health is fine|",
+                "^Camungerê|",
+                "It's my pleasure|",
+                "^Camungerê|"
+              ],
+                          "español": [
+                "Camungere como estás, como estás?|",
+                "^Camungere|", 
+                "¿Cómo está usted?|",
+                "^Camungere|",
+                "¿Cómo está usted?|",
+                "^Camungere|",
+                "Estoy bien de salud|",
+                "^Camungere|",
+                "Para mí es un placer|",
+                "^Camungere|",
+                "¿Cómo está usted?|",
+                "^Camungere|",
+                "Estoy bien de salud|",
+                "^Camungere|",  
+                "¿Cómo está usted?|",
+                "^Camungere|"
+              ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "CORRIDO",
+        "title": {
+          "português": "É, É DE MANHÃ",
+          "english": "YES, IT'S MORNING",
+          "español": "SÍ, ES MANHÃ"
+        },
+        "lyrics": {
+          "português": [
+            "É, é de manhã,|",
+            "Éde manhã que eu vou,|",
+            "Jogar capoeira que o Mestre mandou,|",
+            "^É, é de manhã,|",
+            "^Ede manhã que eu vou,|",
+            "^Jogar capoeira que o Mestre mandou,|",
+            "É, é de manhã,|",
+            "Éde manhã que eu vou,|",
+            "Jogar capoeira que o Mestre mandou,|",
+            "^É, é de manhã,|",
+            "^Éde manhã que eu vou,|",
+            "^Jogar capoeira que o Mestre mandou,|",
+            "É, é de manhã,|",
+            "Éde manhã que eu vou,|",
+            "Jogar capoeira com paz e amor,|",
+            "^É, é de manhã,|",
+            "^Éde manhã que eu vou,|",
+            "^Jogar capoeira que o Mestre mandou,|",
+            "E, é de manhã,|",
+            "E de manhã que eu vou,|",
+            "Vadiar capoeira de Angola é que eu vou,|",
+            "^E, é de manhã,|",
+            "^Éde manhã que eu vou,|",
+            "^Jogar capoeira que o Mestre mandou...|"
+          ],
+          "translations": {
+            "english": [
+              "Yes, it's morning,|",
+              "Yes, it's morning,|",
+              "Play capoeira that the Master ordered,|",
+              "^Yes, it's morning,|",
+              "^Yes, it's morning,|",
+              "^Play capoeira that the Master ordered,|",
+              "Yes, it's morning,|",
+              "Yes, it's morning,|",
+              "Play capoeira that the Master ordered,|",
+              "^Yes, it's morning,|",
+              "^Yes, it's morning,|",
+              "^Play capoeira that the Master ordered,|",
+              "Yes, it's morning,|",
+              "Yes, it's morning,|",
+              "Play capoeira that the Master ordered,|",
+              "^Yes, it's morning,|",
+              "^Yes, it's morning,|",
+              "^Play capoeira that the Master ordered,|",
+              "Yes, it's morning,|",
+              "Yes, it's morning,|",
+              "Play capoeira that the Master ordered,|",
+              "^Yes, it's morning,|",
+              "^Yes, it's morning,|",
+              "^Play capoeira that the Master ordered,|"
+            ],
+            "español": [
+              "Sí, es la mañana,|",
+              "Sí, es la mañana,|",
+              "Jugar capoeira que el Maestro ordenó,|",
+              "^Sí, es la mañana,|",
+              "^Sí, es la mañana,|",
+              "^Jugar capoeira que el Maestro ordenó,|",
+              "Sí, es la mañana,|",
+              "Sí, es la mañana,|",
+              "Jugar capoeira que el Maestro ordenó,|",
+              "^Sí, es la mañana,|",
+              "^Sí, es la mañana,|",
+              "^Jugar capoeira que el Maestro ordenó,|",
+              "Sí, es la mañana,|",
+              "Sí, es la mañana,|",
+              "Jugar capoeira que el Maestro ordenó,...|",
+              "^Sí, es la mañana,|",
+              "^Sí, es la mañana,|",
+              "^Jugar capoeira que el Maestro ordenó,...|",
+              "Sí, es la mañana,|",
+              "Sí, es la mañana,|",
+              "Jugar capoeira que el Maestro ordenó,...|",
+              "^Sí, es la mañana,|",
+              "^Sí, es la mañana,|",
+              "^Jugar capoeira que el Maestro ordenó,...|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "CORRIDO",
+        "title": {
+          "português": "AVE MARIA MEU DEUS",
+          "english": "AVE MARIA MY GOD",
+          "español": "AVE MARIA MI DIOS"
+        },
+        "lyrics": {
+          "português": [
+            "Ave Maria meu Deus|",
+            "Nunca vi casa nova cair|",
+            "Nunca vi casa nova cair, é|",
+            "Nunca vi casa nova cair|",
+            "^Ave Maria meu Deus|",
+            "^Nunca vi casa nova cair|",
+            "Nunca vi casa nova cair|",
+            "Nunca vi casa nova cair|",
+            "^Ave Maria meu Deus|",
+            "^Nunca vi casa nova cair|",
+            "Nunca vi casa nova cair|",
+            "Nunca vi casa nova cair|",
+            "^Ave Maria meu Deus|",
+            "^Nunca vi casa nova cair...|"
+          ],
+          "translations": {
+            "english": [
+              "Hail Mary, my Lord|",
+              "I never saw a new house collapse|",
+              "I never saw a new house collapse|",
+              "I never saw a new house collapse|",
+              "^Hail Mary, my Lord|",
+              "^I never saw a new house collapse|",
+              "I never saw a new house collapse|",
+              "I never saw a new house collapse|",
+              "^Hail Mary, my Lord|",
+              "^I never saw a new house collapse|",
+              "I never saw a new house collapse|",
+              "I never saw a new house collapse|",
+              "^Hail Mary, my Lord|",
+              "^I never saw a new house collapse...|"
+            ],
+            "español": [
+              "Ave María, mi Dios|",
+              "Nunca vi casa nueva caer|",
+              "Nunca vi casa nueva caer|",
+              "Nunca vi casa nueva caer|",
+              "^Ave María, mi Dios|",
+              "^Nunca vi casa nueva caer|",
+              "Nunca vi casa nueva caer|",
+              "Nunca vi casa nueva caer|",
+              "^Ave María, mi Dios|",
+              "^Nunca vi casa nueva caer|",
+              "Nunca vi casa nueva caer|",
+              "Nunca vi casa nueva caer|",
+              "^Ave María, mi Dios|",
+              "^Nunca vi casa nueva caer|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "QUADRA",
+        "title": {
+          "português": "AXÉ BAHIA",
+          "english": "AXÉ BAHIA",
+          "español": "AXÉ BAHIA"
+        },
+        "lyrics": {
+          "português": [
+            "Que bom|",
+            "Estar com você|",
+            "Aqui nessa roda|",
+            "Com esse conjunto|",
+            "Bahia axé|",
+            "Axé Bahia|",
+            "^Bahia axé|",
+            "^Axé Bahia|",
+            "O vento|",
+            "Com o sopro mais lindo|",
+            "Sobre os coqueirais|",
+            "Isso é demais|",
+            "lô... iô iô iô iô|",
+            "iô iô iô iô|",
+            "iô iô iô iô|",
+            "^lô...iô iô iô iô|",
+            "^iô iô iô iô|",
+            "^iô iô iô iô|",
+            "Bahia axé|",
+            "Axé Bahia|",
+            "^Bahia axé|",
+            "^Axé Bahia|"
+          ],
+          "translations": {
+            "english": [
+              "How good|",
+              "To be with you|",
+              "Here in this roda|",
+              "With this group|",
+              "Bahia axé|",
+              "Axé Bahia|",
+              "^Bahia axé|",
+              "^Axé Bahia|",
+              "The wind|",
+              "With the prettiest breeze|",
+              "Over the palm trees|",
+              "That's amazing|",
+              "lô..iô iô iô iô|",
+              "iô iô iô iô|",
+              "iô iô iô iô|",
+              "^lô...iô iô iô iô|",
+              "^iô iô iô iô|",
+              "^iô iô iô iô|",
+              "Bahia axé|",
+              "Axé Bahia|",
+              "^Bahia axé|",
+              "^Axé Bahia|"
+            ],
+            "español": [
+              "Qué bueno|",
+              "Estar contigo|",
+              "Aquí en esta roda|",
+              "Con este grupo|",
+              "Bahía axé|",
+              "Axé Bahía|",
+              "^Bahía axé|",
+              "^Axé Bahía|",
+              "El viento|",
+              "Con el soplo más lindo|",
+              "Sobre los coqueirais|",
+              "Eso es demasiado|",
+              "lô... iô iô iô iô|",
+              "iô iô iô iô|",
+              "iô iô iô iô|",
+              "^lô...iô iô iô iô|",
+              "^iô iô iô iô|",
+              "^iô iô iô iô|",
+              "Bahía axé|",
+              "Axé Bahía|",
+              "^Bahía axé|",
+              "^Axé Bahía|"
+            ]   
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 1",
+        "type": "CORRIDO",
+        "title": {
+          "português": "BOA VIAGEM",
+          "english": "GOOD JOURNEY",
+          "español": "BUENA VIAJE"
+        },
+        "lyrics": {
+          "português": [
+            "Adeus, adeus|",
+            "^Boa viagem|",
+            "Eu vou-me embora|",
+            "^Boa viagem|",
+            "Eu vou com Deus|",
+            "^Boa viagem|",
+            "Nossa Senhora|",
+            "^Boa viagem|",
+            "Adeus|",
+            "^Boa viagem|",
+            "Adeus, adeus|",
+            "^Boa viagem|",
+            "Eu vou-me embora|",
+            "^Boa viagem|",
+            "Nossa Senhora|",
+            "^Boa viagem...|"
+          ],
+          "translations": {
+            "english": [
+              "Goodbye, goodbye|",
+              "^Have a good trip|",
+              "I'm leaving|",
+              "^Have a good trip|",
+              "I go with God|",
+              "^Have a good trip|",
+              "And Our Lady|",
+              "^Have a good trip|",
+              "Goodbye|",
+              "^Have a good trip|",
+              "Goodbye, goodbye|",
+              "^Have a good trip|",
+              "I'm leaving|",
+              "^Have a good trip|",
+              "Our Lady|",
+              "^Have a good trip...|"
+            ],
+            "español": [
+              "Adiós, adiós|",
+              "^Buena viaje|",
+              "Me voy|",
+              "^Buena viaje|",
+              "Me voy con Dios|",
+              "^Buena viaje Nuestra Señora|",
+              "Nuestra Señora|",
+              "^Buena viaje|",
+              "Adiós|",
+              "^Buena viaje|",
+              "Adiós, adiós|",
+              "^Buena viaje|",
+              "Me voy|",
+              "^Buena viaje|", 
+              "Nuestra Señora|",
+              "^Buena viaje...|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "LADAINHA",
+        "title": {
+          "português": "SINZAINHA, O QUE VENDE AÍ?",
+          "english": "MAA' M, WHAT ARE YOU SELLING THERE?",
+          "español": "SINZAINHA, ¿QUÉ VENDE AÍ?"
+        },
+        "lyrics": {
+          "português": [
+            "Sinhazinha, o que vende aí?|",
+            "Vende arroz do Maranhão|",
+            "Meu senhor mandou vender|",
+            "Na terra de Salomão|",
+            "Xique-xique, Macambira|",
+            "Joga pra cima de mim|",
+            "Eu sou braço de maré|",
+            "Mais também sou mar sem fi|",
+            "Oração de braço forte|",
+            "Oração de São Mateo|",
+            "Na roda de capoeira|",
+            "Quem pode comigo é Deus, camarada...|"
+          ],
+          "translations": {
+            "english": [
+              "Ma'am, what are you selling there?|",
+              "You sell rice from Maranhão|",
+              "My (slave)master ordered it to be sold|",
+              "In the land of Solomon|",
+              "Xique-xique*, Macambira|",
+              "Play over me|",
+              "Iam the arm of the tide|",
+              "But I'm also the limitless ocean|",
+              "Prayer for strong arms|",
+              "Prayer to Saint Matthew|",
+              "In the capoeira roda|",
+              "The only one who can conquer me is God, my friend.|"
+            ],
+            "español": [
+              "Señora, ¿qué vende allí?|",
+              "Vende arroz del Maranhão|",
+              "Mi señor me mandó vender|",
+              "En la tierra de Salomón|",
+              "Xique-xique*, Macambira|",
+              "Joga sobre mí|",
+              "Soy el brazo de la marea|",
+              "Pero también soy el mar sin fin|",
+              "Oración para brazos fuertes|",
+              "Oración a San Mateo|", 
+              "En la roda de capoeira|",
+              "El único que puede vencerme es Dios, mi amigo.|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "LOUVAÇÃO",
+        "title": {
+          "português": "",
+          "english": "",
+          "español": ""
+        },
+        "lyrics": {
+          "português": [
+            "Chegou a hora|",
+            "^lê, chegou a hora camará|",
+            "Vamos embora|",
+            "^lê, vamos embora, camará|",
+            "Pelo mundo afora|",
+            "^lê, pelo mundo afora, camará|",
+            "E capoeira|",
+            "^lê, é capoeira, camará|",
+            "Joga aqui pra lá|",
+            "^lê, joga aqui pra lá, camará|",
+            "Joga aqui pra cá|",
+            "^lé, joga aqui pra cá, camará|",
+            "Agua de beber|",
+            "^lê, agua de beber, camará|"
+          ],
+          "translations": {
+            "english": [
+              "The time has come|",
+              "^Iê, the time has come, my friend|",
+              "ˇ|",
+              "^Iê, let's go, my friend|",
+              "Through the outside world|",
+              "^Iê throught the outside world, my friend|",
+              "It's capoeira|",
+              "^It's capoeira, my friend|",
+              "Play from here to there|",
+              "^Iê, play from here to there, my friend|",
+              "Play this way and that way|",
+              "^Iê, play this way and that way, my friend|",
+              "Water to drink|",
+              "^Iê, water to drink, my friend|"
+            ],
+            "español": [
+              "Es hora|",
+              "^Es hora, camará|",
+              "Vamos a irnos|",
+              "^Vamos a irnos, camará|",
+              "Por el mundo entero|",
+              "^Por el mundo entero, camará|",
+              "Y capoeira|",
+              "^Y capoeira, camará|",
+              "Joga aquí y allá|",
+              "^Joga aquí y allá, camará|",
+              "Joga aquí y aquí|",
+              "^Joga aquí y aquí, camará|",
+              "Agua de beber|",
+              "^Agua de beber, camará|"
+            ]
+          }
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "CORRIDO",
+        "title": {
+          "português": "QUEM VEM LÁ",
+          "english": "WHO COMES HERE",
+          "español": "¿QUIÉN VEN AQUI?"
+        },
+        "lyrics": {
+          "português": [
+            "Quem vem lá sou eu|",
+            "Quem vem lá sou eu|",
+            "Berimbau bateu|",
+            "Angoleiro sou eu|",
+            "^Quem vem lá sou eu|",
+            "^Quem vem lá sou eu|",
+            "^Berimbau bateu|",
+            "^Angoleiro sou eu|",
+            "Sou eu, sou eu|",
+            "^Quem vem lá|", 
+            "Sou eu Brevenuto|",
+            "^Quem vem lá|",
+            "Montadoa cavalo|",
+            "^Quem vem lá|",
+            "Fumando charuto|",
+            "^Quem vem lá|",
+            "Quem vem lá sou eu|",
+            "O maior é Deus|",
+            "Na cancela bateu|",
+            "Angoleiro sou eu|",
+            "^Quem vem lá sou eu|",
+            "^Quem vem lá sou eu|",
+            "^Berimbau bateu|",
+            "^Angoleiro sou eu|"
+          ],
+          "translations": {
+            "english": [
+              "Who goes there? It's me|",
+              "Who goes there? It's me|",
+              "The berimbau played|",
+              "I am an Angola player|",
+              "^Who goes there? It's me|",
+              "^Who goes there? It's me|",
+              "^The berimbau played|",
+              "^I am an Angola player|",
+              "It's me, it's me|",
+              "^Who goes there?|",
+              "It's me, Acuarela|",
+              "^Who goes there?|",
+              "On my horse|",
+              "^Who goes there?|",
+              "Smoking a cigar|",
+              "^Who goes there?|",
+              "Who goes there? It's me|",
+              "God is the greatest|",
+              "On the door he knocked|",
+              "I am an Angola player|",
+              "^Who goes there? It's me|",
+              "^Who goes there? It's me|",
+              "^The berimbau played|",
+              "^I am an Angola player...|"
+            ],
+            "español": [
+              "¿Quién viene aquí? Soy yo|",
+              "^¿Quién viene aquí? Soy yo|",
+              "El berimbau tocó|",
+              "Soy un angoleiro|",
+              "^¿Quién viene aquí? Soy yo|",
+              "^¿Quién viene aquí? Soy yo|",
+              "^El berimbau tocó|",
+              "^Soy un angoleiro|",
+              "Soy yo, soy yo|",
+              "^¿Quién viene aquí?|",
+              "Soy yo, Acuarela|",
+              "^¿Quién viene aquí?|",
+              "Montado en mi caballo|",
+              "^¿Quién viene aquí?|",
+              "Fumando un charuto|",
+              "^¿Quién viene aquí?|",
+              "¿Quién viene aquí? Soy yo|",
+              "Dios es el mayor|",
+              "En la puerta golpeó|",
+              "Soy un angoleiro|",
+              "^¿Quién viene aquí? Soy yo|",
+              "^¿Quién viene aquí? Soy yo|",
+              "^El berimbau tocó|",
+              "^Soy un angoleiro...|"
+            ]
+          } 
+        }
+      },
+     
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "CORRIDO",
+        "title": {
+          "português": "AVISA MEU MANO",
+          "english": "GO TELL MY BROTHER",
+          "español": "AVISA A MI HERMANO"
+        },
+        "lyrics": {
+          "português": [
+            "Avisa meu mano|",
+            "Avisa meu mano|",
+            "Avisa meu mano|",
+            "Capoeira de Angola mandou me chamar|",
+            "^Avisa meu mano|"
+            "^Avisa meu mano|",
+            "^Avisa meu mano|",
+            "^Capoeira de Angola mandou me chamar|",
+            "Capoeira é luta nossa|",
+            "Da era colonial|",
+            "E nasceu foi na Bahia|",
+            "Angola e Regiona|",
+            "^Avisa meu mano|",
+            "^Avisa meu mano|",
+            "^Avisa meu mano|",
+            "^Capoeira de Angola mandou me chamar|",
+            "Vou-me embora pra Bahia|",
+            "Amanhã eu vou pra lá|",
+            "Vou jogar a capoeira|",
+            "No Mercada Popular|",
+            "^Avisa meu mano|",
+            "^Avisa meu mano|",
+            "^Avisa meu mano|",
+            "^Capoeira de Angola mandou me chamar|"
+          ],
+          "translations": {
+            "english": [
+              "Go tell my brother|",
+              "Go tell my brother|", 
+              "Go tell my brother|",
+              "Capoeira from Angola beckoned me to play|",
+              "^Go tell my brother|",
+              "^Go tell my brother|",
+              "^Go tell my brother|",
+              "^Capoeira from Angola beckoned me to play|",
+              "Capoeira is our way of fighting|",
+              "From colonial times|",
+              "It was born in Bahia|",
+              "Angola and Regional|",
+              "^Go tell my brother|",
+              "^Go tell my brother|",
+              "^Go tell my brother|",
+              "^Capoeira from Angola beckoned me to play|",
+              "I'm going to Bahia|",
+              "Tomorrow I'm going there|",
+              "I will play capoeira|",
+              "At the Popular Market|",
+              "^Go tell my brother|",
+              "^Go tell my brother|",
+              "^Go tell my brother|",
+              "^Capoeira from Angola beckoned me to play...|"
+            ],
+            "español": [
+              "Avisa a mi hermano|",
+              "Avisa a mi hermano|",
+              "Avisa a mi hermano|", 
+              "Capoeira de Angola me mandó llamar|",
+              "^Avisa a mi hermano|",
+              "^Avisa a mi hermano|",
+              "^Avisa a mi hermano|",
+              "^Capoeira de Angola me mandó llamar|",
+              "Capoeira es nuestra forma de luchar|",
+              "De la época colonial|",
+              "Nació en Bahía|",
+              "Angola y Regional|",
+              "^Avisa a mi hermano|",
+              "^Avisa a mi hermano|",
+              "^Avisa a mi hermano|",
+              "^Capoeira de Angola me mandó llamar|",
+              "Me voy para Bahía|",
+              "Mañana voy para allá|",
+              "Voy a jugar capoeira|",
+              "En el Mercado Popular|",
+              "^Avisa a mi hermano|",
+              "^Avisa a mi hermano|",
+              "^Avisa a mi hermano|",
+              "^Capoeira de Angola me mandó llamar...|"
+            ]
+          } 
+        }
+      }
+
+    ]
+}
