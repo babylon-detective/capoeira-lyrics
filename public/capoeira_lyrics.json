@@ -999,7 +999,416 @@
             ]
           } 
         }
+      },
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "CORRIDO",
+        "title": {
+          "português": "PARANÁ É",
+          "english": "IT'S PARANÁ*",
+          "español": "ES PARANÁ"
+        },
+        "lyrics": {
+          "português": [
+            "Paraná é, Paraná é, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "É Paraná é, Paraná|",
+            "Paraná, Paraná, é, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Vou-me embora, vou-me embora, Paraná|",
+            "Como eu já disse que eu vou, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Vou-me embora prà Bahia, Paraná|",
+            "Porque lá é meu lugar, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "E Paraná é, Paraná|",
+            "Paraná, Paraná, é, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Vou dizer a minha mulher, Paraná|",
+            "Capoeira me venceu, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Ela quis bater pé firme, Paraná|",
+            "Isso não me aconteceu, Paraná|",
+            "Paraná é, Paraná é, Paraná|",
+            "Vou-me embora dia e noite, Paraná|",
+            "Mas não tenho que passar, Paraná|",
+            "Paraná é, Paraná é, Paraná...|"
+          ],
+          "translations": {
+            "english": [
+              "It's Paraná, It's Paraná, Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "It's Paraná, It's Paraná, Paraná|", 
+              "It's Paraná, It's Paraná, Paraná|",
+              "It's Paraná, It's Paraná|",
+              "Paraná, Paraná, it's Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "I'm leaving, I'm leaving, Paraná|",
+              "Like I said I would, Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "I'm leaving for Bahia, Paraná|",
+              "Because that's my home, Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "It's Paraná, It's Paraná|",
+              "Paraná, Paraná, it's Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "I'm going to tell my wife, Paraná|",
+              "Capoeira beat me, Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "She wanted to put her foot down, Paraná|",
+              "But that didn't happen, Paraná|",
+              "It's Paraná, It's Paraná, Paraná|",
+              "I'm leaving day and night, Paraná|",
+              "But I don't have to go through, Paraná|",
+              "It's Paraná, It's Paraná, Paraná...|"
+            ],
+            "español": [
+              "Es Paraná, Es Paraná, Paraná|",
+              "Es Paraná, Es Paraná, Paraná|", 
+              "Es Paraná, Es Paraná, Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Es Paraná, Es Paraná|",
+              "Paraná, Paraná, es Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Me voy, me voy, Paraná|",
+              "Como ya dije que me iba, Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Me voy para Bahía, Paraná|",
+              "Porque allí es mi lugar, Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Es Paraná, Es Paraná|",
+              "Paraná, Paraná, es Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Le voy a decir a mi mujer, Paraná|",
+              "Capoeira me venció, Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Ella quiso poner el pie firme, Paraná|",
+              "Eso no me sucedió, Paraná|",
+              "Es Paraná, Es Paraná, Paraná|",
+              "Me voy día y noche, Paraná|",
+              "Pero no tengo que pasar, Paraná|",
+              "Es Paraná, Es Paraná, Paraná...|"
+            ]
+          } 
+        }
+      } ,
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "CORRIDO",
+        "title": {
+          "português": "OIAIÁ, O SENHOR TÁ ME CHAMANDO",
+          "english": "OIAIÁ, THE MASTER IS CALLING ME",
+          "español": "OIAIÁ, EL MAESTRO ME LLAMA"
+        },
+        "lyrics": {
+          "português": [
+            "Oiaiá, o senhor tá me chamando|",
+            "O senhor tá me chamando, oiaiá|",
+            "Me chamando pra jogar, oiaiá|",
+            "Oiaiá, o senhor tá me chamando|",
+            "O senhor tá me chamando, oiaiá|", 
+            "Me chamando pra jogar, oiaiá|",
+            "Oiaiá, o senhor tá me chamando|",
+            "O senhor tá me chamando, oiaiá|",
+            "Me chamando pra jogar, oiaiá|",
+            "Oiaiá, o senhor tá me chamando|",
+            "O senhor tá me chamando, oiaiá|",
+            "Me chamando pra jogar, oiaiá...|"
+          ],
+          "translations": {
+            "english": [
+            "Oiaiá, the master is calling me|",
+            "The master is calling me, oiaiá|", 
+            "Calling me to play, oiaiá|",
+            "Oiaiá, the master is calling me|",
+            "The master is calling me, oiaiá|",
+            "Calling me to play, oiaiá|", 
+            "Oiaiá, the master is calling me|",
+            "The master is calling me, oiaiá|",
+            "Calling me to play, oiaiá|",
+            "Oiaiá, the master is calling me|", 
+            "The master is calling me, oiaiá|",
+            "Calling me to play, oiaiá...|"
+            ],
+            "español": [
+            "Oiaiá, el maestro me llama|",
+            "El maestro me llama, oiaiá|",
+            "Me llama para jugar, oiaiá|",
+            "Oiaiá, el maestro me llama|",
+            "El maestro me llama, oiaiá|",
+            "Me llama para jugar, oiaiá|",
+            "Oiaiá, el maestro me llama|", 
+            "El maestro me llama, oiaiá|",
+            "Me llama para jugar, oiaiá|",
+            "Oiaiá, el maestro me llama|",
+            "El maestro me llama, oiaiá|",
+            "Me llama para jugar, oiaiá...|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 2",
+        "type": "QUADRA",
+        "title": {
+          "português": "MEU POVO QUE BELEZA",
+          "english": "MY PEOPLE, WHAT A BEAUTY",
+          "español": "MI POBLACIÓN, QUE BELLA"
+        },
+        "lyrics": {
+          "português": [
+          "Meu povo, que beleza|",
+          "Essa é capoeira com certeza|",
+          "E quando o meu Mestre voltar|",
+          "^Voltar|",
+          "Bate palmas acenando para o ar|",
+          "Não se esqueça do que ele falou|",
+          "^Falou|",
+          "Toque pandeiro, berimbau, toque agogô|",
+          "^Toque pandeiro, berimbau, toque agogô|",
+          "Vai, vai, vai cair|",
+          "Beleza, beleza|",
+          "^Vai, vai, vai cair|",
+          "Aí eu vi|",
+          "^Vai, vai, vai cair|",
+          "Beleza, beleza|",
+          "^Vai, vai, vai cair...|"
+          ],
+          "translations": {
+            "english": [
+            "My people, what a beauty|",
+            "This is capoeira for sure|",
+            "And when my Master comes back|",
+            "^Comes back|",
+            "Clap your hands gesturing up to the air|",
+            "Don't forget what he said|",
+            "^He said|", 
+            "Play pandeiro, berimbau, play agogô|",
+            "^Play pandeiro, berimbau, play agogô|",
+            "It's going to, going to, going to go down|",
+            "Beautiful, beautiful|",
+            "^It's going to, going to, going to go down|",
+            "That's where I saw|",
+            "^It's going to, going to, going to go down|", 
+            "Beautiful, beautiful|",
+            "^It's going to, going to, going to go down...|"
+            ],
+            "español": [
+            "Mi gente, qué belleza|",
+            "Esta es capoeira seguramente|",
+            "Y cuando mi Maestro regrese|",
+            "^Regrese|",
+            "Aplaude gesticulando al aire|",
+            "No olvides lo que dijo|",
+            "^Lo que dijo|",
+            "Toca pandeiro, berimbau, toca agogô|",
+            "^Toca pandeiro, berimbau, toca agogô|",
+            "Va a, va a, va a caer|",
+            "Qué bella, qué bella|",
+            "^Va a, va a, va a caer|",
+            "Ahí lo vi|",
+            "^Va a, va a, va a caer|",
+            "Qué bella, qué bella|",
+            "^Va a, va a, va a caer...|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 3",
+        "type": "LADAINHA",
+        "title": {
+          "português": "NOVA IORQUE É A CIDADE",
+          "english": "NEW YORK IS THE CITY",
+          "español": "NUEVA YORK ES LA CIUDAD"
+        },
+        "lyrics": {
+          "português": [
+            "Nova lorque é a cidade|",
+            "Nova lorque é a cidade|",
+            "Ensopado mundial|",
+            "Do gengibre do Chinatown, ora meu Deus|",
+            "Aos esquilos no Parque Central|",
+            "Vai andando com carinho, ora meu Deus|", 
+            "Ouvir o som do berimbau, camarada...|"
+          ],
+          "translations": {
+            "english": [
+            "New York is the city|",
+            "New York is the city|", 
+            "Global stew|",
+            "From the ginger of Chinatown, oh my Lord|",
+            "To the squirrels in Central Park|",
+            "Walk around affectionately, oh my Lord|",
+            "Hearing the sound of the berimbau, my friend...|"
+            ],
+            "español": [
+              "Nueva York es la ciudad|",
+              "Nueva York es la ciudad|",
+              "Ensopado mundial|",
+              "Del gengibre de Chinatown, oh mi Dios|",
+              "A los ardillas en el Parque Central|",
+              "Vaya andando con cariño, oh mi Dios|",
+              "Oyendo el sonido del berimbau, amigo...|" 
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 3",
+        "type": "LOUVAÇÃO",
+        "title": {
+          "português": "",
+          "english": "",
+          "español": ""
+        },
+        "lyrics": {
+          "português": [
+            "Viva meu Deus|",
+            "^lê, viva meu Deus, camará|",
+            "Viva meu Mestre|",
+            "^lê, viva meu Mestre, camará|", 
+            "Todos os Mestres|",
+            "^lê, todos os Mestres, camará|",
+            "Que me ensinou|",
+            "^lê, que me ensinou, camará|",
+            "A capoeira|",
+            "^lê, a capoeira, camará|",
+            "Jogo de Angola|",
+            "^lê, jogo de Angola, camará|",
+            "E Regional|",
+            "^lê, e Regional, camará|",
+            "Dá volta ao mundo|",
+            "^lê, dá volta ao mundo, camará|"
+    
+          ],
+          "translations": {
+            "english": [
+            "Praise my Lord|",
+            "^lê, praise my Lord, my friend|",
+            "Praise my Mestre|",
+            "^lê, praise my Mestre, my friend|", 
+            "All the Mestres|",
+            "^lê, all the Mestres, my friend|",
+            "Who taught me|",
+            "^lê, who taught me, my friend|",
+            "Capoeira|", 
+            "^lê, capoeira, my friend|",
+            "Angola game|",
+            "^lê, Angola game, my friend|",
+            "And Regional|",
+            "^lê, and Regional, my friend|",
+            "Go around the world|",
+            "^lê, go around the world, my friend|"
+            ],
+            "español": [
+            "Viva mi Dios|",
+            "^lê, viva mi Dios, camarada|",
+            "Viva mi Maestro|",
+            "^lê, viva mi Maestro, camarada|",
+            "Todos los Maestros|", 
+            "^lê, todos los Maestros, camarada|",
+            "Que me enseñó|",
+            "^lê, que me enseñó, camarada|",
+            "La capoeira|",
+            "^lê, la capoeira, camarada|",
+            "Juego de Angola|",
+            "^lê, juego de Angola, camarada|",
+            "Y Regional|",
+            "^lê, y Regional, camarada|",
+            "Da vuelta al mundo|",
+            "^lê, da vuelta al mundo, camarada|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 3",
+        "type": "CORRIDO",
+        "title": {
+          "português": "BEIRA MAR",
+          "english": "SEA SHORE",
+          "español": "PLAYA DE MAR"
+        },
+        "lyrics": {
+          "português": [
+          "Beira mar, ioiô|",
+          "Beira mar, iaia|",
+          "^Beira mar, ioiô|",
+          "^Beira mar, iaiá|",
+          "Beira mar, ioiô|",
+          "Beira mar, iaiá|",
+          "^Beira mar, ioiô|",
+          "^Beira mar, iaiá|",
+          "Beira mar, beira mar|",
+          "^É de ioiô|",
+          "Beira mar, beira mar|",
+          "^É de iaiá|",
+          "Beira mar, beira mar|",
+          "^É de ioiô|",
+          "Beira mar, beira mar|",
+          "^É de iaiá|"
+          ],
+          "translations": {
+            "english": [
+            "Sea shore, ioiô|",
+            "Sea shore, iaiá|",
+            "^Sea shore, ioiô|",
+            "^Sea shore, iaiá|", 
+            "Sea shore, ioiô|",
+            "Sea shore, iaiá|",
+            "^Sea shore, ioiô|",
+            "^Sea shore, iaiá|",
+            "Sea shore, sea shore|",
+            "^It is ioiô's|",
+            "Sea shore, sea shore|",
+            "^It is iaiá's|",
+            "Sea shore, sea shore|",
+            "^It is ioiô's|",
+            "Sea shore, sea shore|",
+            "^It is iaiá's|"
+            ],
+            "español": [
+            "Playa de mar, ioiô|",
+            "Playa de mar, iaiá|",
+            "^Playa de mar, ioiô|", 
+            "^Playa de mar, iaiá|",
+            "Playa de mar, ioiô|",
+            "Playa de mar, iaiá|",
+            "^Playa de mar, ioiô|",
+            "^Playa de mar, iaiá|",
+            "Playa de mar, playa de mar|",
+            "^Es de ioiô|",
+            "Playa de mar, playa de mar|",
+            "^Es de iaiá|",
+            "Playa de mar, playa de mar|",
+            "^Es de ioiô|",
+            "Playa de mar, playa de mar|",
+            "^Es de iaiá|"
+            ]
+          } 
+        }
       }
+
 
     ]
 }
