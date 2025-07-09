@@ -11,7 +11,24 @@ export class LyricsRenderer {
 
   renderLyrics(songs: Song[], container: HTMLElement): void {
     if (!songs || songs.length === 0) {
-      container.innerHTML = '<p>No lyrics available.</p>';
+      // Get authors for the selector options
+      const authors = this.lyricsService.getAuthors();
+      const authorOptions = authors.map(author => 
+        `<option value="${author.name}">${author.name}</option>`
+      ).join('');
+      
+      container.innerHTML = `
+        <div class="sticky-header" data-track="Default">
+          <div class="song-selector">
+            <select id="songSelect-default">
+              <option value="" disabled selected>Choose an Author...</option>
+              ${authorOptions}
+            </select>
+          </div>
+        </div>
+        <h2 id="lyrics-track-heading" class="track-heading">Select an Author</h2>
+        <p>No lyrics available.</p>
+      `;
       return;
     }
 
@@ -19,12 +36,37 @@ export class LyricsRenderer {
     const trackGroups = this.groupSongsByTrack(songs);
     let lyricsHTML = '';
 
+    // Get authors for the selector options
+    const authors = this.lyricsService.getAuthors();
+    const authorOptions = authors.map(author => 
+      `<option value="${author.name}">${author.name}</option>`
+    ).join('');
+
+    // Add sticky header for lyrics column with song selector only
+    lyricsHTML += `
+      <div class="sticky-header">
+        <div class="song-selector">
+          <select id="songSelect-main">
+            <option value="" disabled selected>Choose an Author...</option>
+            ${authorOptions}
+          </select>
+        </div>
+      </div>
+      <h2 id="lyrics-track-heading" class="track-heading">Track 1</h2>
+    `;
+
     // Sort track names for consistent display
     const sortedTrackNames = Object.keys(trackGroups).sort();
     
-    sortedTrackNames.forEach(trackName => {
+    sortedTrackNames.forEach((trackName, trackIndex) => {
       const trackId = trackName.replace(/\s+/g, '-');
-      lyricsHTML += `<h2 id="lyrics-track-${trackId}">${trackName}</h2>`;
+      
+      // Create track nest component for communication
+      lyricsHTML += `
+        <div class="track-nest" data-track="${trackName}" id="lyrics-nest-${trackId}">
+          <!-- Track ${trackIndex + 1} Content -->
+        </div>
+      `;
       
       trackGroups[trackName].forEach((song, index) => {
         const songId = `lyrics-song-${index}-${trackId}`;
@@ -44,19 +86,75 @@ export class LyricsRenderer {
 
   renderTranslations(songs: Song[], language: SupportedLanguage, container: HTMLElement): void {
     if (!songs || songs.length === 0) {
-      container.innerHTML = '<p>No translations available.</p>';
+      // Get authors for the selector options
+      const authors = this.lyricsService.getAuthors();
+      const authorOptions = authors.map(author => 
+        `<option value="${author.name}">${author.name}</option>`
+      ).join('');
+      
+      container.innerHTML = `
+        <div class="sticky-header" data-track="Default">
+          <div class="song-selector">
+            <select id="songSelect-trans-default">
+              <option value="" disabled selected>Choose an Author...</option>
+              ${authorOptions}
+            </select>
+          </div>
+          <div class="language-selector">
+            <select id="languageSelect-default" disabled>
+              <option value="" disabled selected>Choose language...</option>
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+            </select>
+          </div>
+        </div>
+        <h2 id="trans-track-heading" class="track-heading">Select a Language</h2>
+        <p>No translations available.</p>
+      `;
       return;
     }
 
     const trackGroups = this.groupSongsByTrack(songs);
     let translationsHTML = '';
 
+    // Get authors for the selector options
+    const authors = this.lyricsService.getAuthors();
+    const authorOptions = authors.map(author => 
+      `<option value="${author.name}">${author.name}</option>`
+    ).join('');
+
+    // Add sticky header for translations column with language selector and author selector
+    translationsHTML += `
+      <div class="sticky-header">
+        <div class="song-selector">
+          <select id="songSelect-trans">
+            <option value="" disabled selected>Choose an Author...</option>
+            ${authorOptions}
+          </select>
+        </div>
+        <div class="language-selector">
+          <select id="languageSelect-main">
+            <option value="" disabled selected>Choose language...</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+          </select>
+        </div>
+      </div>
+      <h2 id="trans-track-heading" class="track-heading">Track 1</h2>
+    `;
+
     // Sort track names for consistent display
     const sortedTrackNames = Object.keys(trackGroups).sort();
     
-    sortedTrackNames.forEach(trackName => {
+    sortedTrackNames.forEach((trackName, trackIndex) => {
       const trackId = trackName.replace(/\s+/g, '-');
-      translationsHTML += `<h2 id="trans-track-${trackId}">${trackName}</h2>`;
+      
+      // Create track nest component for communication
+      translationsHTML += `
+        <div class="track-nest" data-track="${trackName}" id="trans-nest-${trackId}">
+          <!-- Track ${trackIndex + 1} Content -->
+        </div>
+      `;
       
       trackGroups[trackName].forEach((song, index) => {
         const songId = `trans-song-${index}-${trackId}`;

@@ -8,8 +8,6 @@ export class UIManager {
   private renderer: LyricsRenderer;
   
   // DOM elements
-  private songSelect: HTMLSelectElement;
-  private languageSelect: HTMLSelectElement;
   private lyricsContainer: HTMLElement;
   private translationsContainer: HTMLElement;
 
@@ -25,8 +23,6 @@ export class UIManager {
     };
 
     // Initialize DOM elements
-    this.songSelect = document.getElementById('songSelect') as HTMLSelectElement;
-    this.languageSelect = document.getElementById('languageSelect') as HTMLSelectElement;
     this.lyricsContainer = document.querySelector('.lyrics-column .content-container') as HTMLElement;
     this.translationsContainer = document.querySelector('.translation-column .content-container') as HTMLElement;
 
@@ -34,8 +30,26 @@ export class UIManager {
   }
 
   private initializeEventListeners(): void {
-    this.songSelect.addEventListener('change', this.handleAuthorChange.bind(this));
-    this.languageSelect.addEventListener('change', this.handleLanguageChange.bind(this));
+    // Use event delegation for dynamically created selectors
+    this.lyricsContainer.addEventListener('change', this.handleLyricsContainerChange.bind(this));
+    this.translationsContainer.addEventListener('change', this.handleTranslationsContainerChange.bind(this));
+  }
+
+  private handleLyricsContainerChange(event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    if (target.id && (target.id.startsWith('songSelect-') || target.id === 'songSelect-main')) {
+      this.handleAuthorChange(event);
+    }
+  }
+
+  private handleTranslationsContainerChange(event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    if (target.id && (target.id.startsWith('languageSelect-') || target.id === 'languageSelect-main')) {
+      this.handleLanguageChange(event);
+    }
+    if (target.id && (target.id.startsWith('songSelect-trans') || target.id === 'songSelect-trans')) {
+      this.handleAuthorChange(event);
+    }
   }
 
   private async handleAuthorChange(event: Event): Promise<void> {
@@ -44,12 +58,12 @@ export class UIManager {
 
     if (!selectedAuthor) {
       this.clearDisplay();
-      this.languageSelect.disabled = true;
+      this.updateAllLanguageSelectors(true); // disable all language selectors
       return;
     }
 
     this.state.selectedAuthor = selectedAuthor;
-    this.languageSelect.disabled = false;
+    this.updateAllLanguageSelectors(false); // enable all language selectors
 
     try {
       this.setState({ isLoading: true, error: null });
@@ -63,8 +77,11 @@ export class UIManager {
       this.renderer.renderLyrics(songs, this.lyricsContainer);
       
       // Set default language and render translations
-      this.languageSelect.value = 'en'; // Use short code for HTML
+      this.updateAllLanguageSelectors(false, 'en'); // Set all language selectors to English
       this.renderer.renderTranslations(songs, this.state.selectedLanguage, this.translationsContainer);
+      
+      // Notify that content has been updated (for scroll tracking)
+      this.notifyContentUpdated();
       
       this.setState({ isLoading: false });
     } catch (error) {
@@ -125,45 +142,55 @@ export class UIManager {
   }
 
   populateAuthorSelect(): void {
+    // This method is now handled by the renderer when it creates the dynamic selectors
+    // We just need to load the initial data
+    this.loadInitialData();
+  }
+
+  private loadInitialData(): void {
+    // Load authors and render empty state
     const authors = this.lyricsService.getAuthors();
-    
-    // Clear existing options except the first one
-    while (this.songSelect.children.length > 1) {
-      this.songSelect.removeChild(this.songSelect.lastChild!);
+    if (authors.length > 0) {
+      // Render empty state with selectors
+      this.renderer.renderLyrics([], this.lyricsContainer);
+      this.renderer.renderTranslations([], 'english', this.translationsContainer);
     }
-
-    // Add author options
-    authors.forEach(author => {
-      const option = document.createElement('option');
-      option.value = author.name;
-      option.textContent = author.name;
-      this.songSelect.appendChild(option);
-    });
-
-    // Populate language selector
-    this.populateLanguageSelect();
   }
 
-  private populateLanguageSelect(): void {
-    // Use short codes for HTML values, but map to full language names
-    const languageOptions = [
-      { code: 'en', name: 'English', fullName: 'english' },
-      { code: 'es', name: 'Spanish', fullName: 'español' }
-    ];
-    
-    // Clear existing options except the first one
-    while (this.languageSelect.children.length > 1) {
-      this.languageSelect.removeChild(this.languageSelect.lastChild!);
-    }
-
-    // Add language options using short codes
-    languageOptions.forEach(lang => {
-      const option = document.createElement('option');
-      option.value = lang.code;
-      option.textContent = lang.name;
-      this.languageSelect.appendChild(option);
+  private updateAllLanguageSelectors(disabled: boolean, value?: string): void {
+    const languageSelectors = this.translationsContainer.querySelectorAll('select[id^="languageSelect-"]');
+    languageSelectors.forEach(selector => {
+      const selectElement = selector as HTMLSelectElement;
+      selectElement.disabled = disabled;
+      if (value) {
+        selectElement.value = value;
+      }
     });
   }
+
+  private updateAllAuthorSelectors(disabled: boolean, value?: string): void {
+    // Update author selectors in lyrics column
+    const lyricsAuthorSelectors = this.lyricsContainer.querySelectorAll('select[id^="songSelect-"]');
+    lyricsAuthorSelectors.forEach(selector => {
+      const selectElement = selector as HTMLSelectElement;
+      selectElement.disabled = disabled;
+      if (value) {
+        selectElement.value = value;
+      }
+    });
+    
+    // Update author selectors in translations column
+    const transAuthorSelectors = this.translationsContainer.querySelectorAll('select[id^="songSelect-trans"]');
+    transAuthorSelectors.forEach(selector => {
+      const selectElement = selector as HTMLSelectElement;
+      selectElement.disabled = disabled;
+      if (value) {
+        selectElement.value = value;
+      }
+    });
+  }
+
+
 
   private mapLanguageCodeToName(code: string): SupportedLanguage {
     switch (code) {
@@ -184,5 +211,11 @@ export class UIManager {
 
   getState(): AppState {
     return { ...this.state };
+  }
+
+  private notifyContentUpdated(): void {
+    // Dispatch a custom event to notify scroll tracker of content updates
+    const event = new CustomEvent('contentUpdated');
+    window.dispatchEvent(event);
   }
 } 

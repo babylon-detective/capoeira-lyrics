@@ -1,12 +1,14 @@
 import { LyricsService } from './services/LyricsService';
 import { LyricsRenderer } from './components/LyricsRenderer';
 import { UIManager } from './components/UIManager';
+import { ScrollTracker } from './utils/scroll-tracker';
 import { testFormatting } from './utils/test-formatting';
 
 export class LyricsApp {
   private lyricsService: LyricsService;
   private renderer: LyricsRenderer;
   private uiManager: UIManager;
+  private scrollTracker: ScrollTracker | null = null;
 
   constructor() {
     this.lyricsService = new LyricsService();
@@ -28,6 +30,10 @@ export class LyricsApp {
       // Populate UI with available authors
       this.uiManager.populateAuthorSelect();
       console.log('UI initialized successfully');
+      
+      // Initialize scroll tracking
+      this.scrollTracker = new ScrollTracker();
+      console.log('Scroll tracker initialized');
       
     } catch (error) {
       console.error('Failed to initialize app:', error);
