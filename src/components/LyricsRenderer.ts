@@ -11,9 +11,9 @@ export class LyricsRenderer {
 
   renderLyrics(songs: Song[], container: HTMLElement): void {
     if (!songs || songs.length === 0) {
-      // Get authors for the selector options
-      const authors = this.lyricsService.getAuthors();
-      const authorOptions = authors.map(author => 
+      // Get available authors from the index
+      const availableAuthors = this.lyricsService.getAvailableAuthors();
+      const authorOptions = availableAuthors.map(author => 
         `<option value="${author.name}">${author.name}</option>`
       ).join('');
       
@@ -36,9 +36,9 @@ export class LyricsRenderer {
     const trackGroups = this.groupSongsByTrack(songs);
     let lyricsHTML = '';
 
-    // Get authors for the selector options
-    const authors = this.lyricsService.getAuthors();
-    const authorOptions = authors.map(author => 
+    // Get available authors from the index
+    const availableAuthors = this.lyricsService.getAvailableAuthors();
+    const authorOptions = availableAuthors.map(author => 
       `<option value="${author.name}">${author.name}</option>`
     ).join('');
 
@@ -86,9 +86,9 @@ export class LyricsRenderer {
 
   renderTranslations(songs: Song[], language: SupportedLanguage, container: HTMLElement): void {
     if (!songs || songs.length === 0) {
-      // Get authors for the selector options
-      const authors = this.lyricsService.getAuthors();
-      const authorOptions = authors.map(author => 
+      // Get available authors from the index
+      const availableAuthors = this.lyricsService.getAvailableAuthors();
+      const authorOptions = availableAuthors.map(author => 
         `<option value="${author.name}">${author.name}</option>`
       ).join('');
       
@@ -111,9 +111,9 @@ export class LyricsRenderer {
     const trackGroups = this.groupSongsByTrack(songs);
     let translationsHTML = '';
 
-    // Get authors for the selector options
-    const authors = this.lyricsService.getAuthors();
-    const authorOptions = authors.map(author => 
+    // Get available authors from the index
+    const availableAuthors = this.lyricsService.getAvailableAuthors();
+    const authorOptions = availableAuthors.map(author => 
       `<option value="${author.name}">${author.name}</option>`
     ).join('');
 

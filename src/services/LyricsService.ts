@@ -1,34 +1,85 @@
-import { LyricsData, Song, Author, Album, Track, SupportedLanguage } from '../types';
+import { LyricsData, Song, Author, Album, Track, SupportedLanguage, AuthorIndex, AuthorsIndexData } from '../types';
 
 export class LyricsService {
-  private data: LyricsData | null = null;
+  private authorsIndex: AuthorsIndexData | null = null;
+  private authorData: Map<string, LyricsData> = new Map();
   private authors: Map<string, Author> = new Map();
   private songTypes: Set<string> = new Set();
 
-  async loadData(): Promise<LyricsData> {
+  async loadAuthorsIndex(): Promise<AuthorsIndexData> {
     try {
       const cacheBuster = `?cb=${new Date().getTime()}`;
-      const response = await fetch(`/capoeira_lyrics.json${cacheBuster}`);
+      const response = await fetch(`/authors-index.json${cacheBuster}`);
       
       if (!response.ok) {
-        throw new Error(`Failed to load lyrics data: ${response.statusText}`);
+        throw new Error(`Failed to load authors index: ${response.statusText}`);
       }
       
       const data = await response.json();
-      this.data = data;
-      this.processData();
+      this.authorsIndex = data;
       return data;
     } catch (error) {
-      console.error('Error loading lyrics data:', error);
+      console.error('Error loading authors index:', error);
       throw error;
     }
   }
 
-  private processData(): void {
-    if (!this.data) return;
+  async loadAuthorData(authorId: string): Promise<LyricsData> {
+    if (this.authorData.has(authorId)) {
+      return this.authorData.get(authorId)!;
+    }
 
-    // Extract unique authors and song types
-    this.data.songs.forEach(song => {
+    if (!this.authorsIndex) {
+      await this.loadAuthorsIndex();
+    }
+
+    const authorInfo = this.authorsIndex!.authors.find(a => a.id === authorId);
+    if (!authorInfo) {
+      throw new Error(`Author ${authorId} not found in index`);
+    }
+
+    try {
+      const cacheBuster = `?cb=${new Date().getTime()}`;
+      const response = await fetch(`/authors/${authorInfo.file}${cacheBuster}`);
+      
+      if (!response.ok) {
+        throw new Error(`Failed to load data for author ${authorId}: ${response.statusText}`);
+      }
+      
+      const data = await response.json();
+      this.authorData.set(authorId, data);
+      this.processAuthorData(authorId, data);
+      return data;
+    } catch (error) {
+      console.error(`Error loading data for author ${authorId}:`, error);
+      throw error;
+    }
+  }
+
+  async loadData(): Promise<LyricsData> {
+    // Load authors index first
+    await this.loadAuthorsIndex();
+    
+    // Load all author data
+    const allSongs: Song[] = [];
+    for (const authorInfo of this.authorsIndex!.authors) {
+      try {
+        const authorData = await this.loadAuthorData(authorInfo.id);
+        allSongs.push(...authorData.songs);
+      } catch (error) {
+        console.warn(`Failed to load data for author ${authorInfo.id}:`, error);
+      }
+    }
+    
+    // Return combined data
+    return { songs: allSongs };
+  }
+
+  private processAuthorData(authorId: string, data: LyricsData): void {
+    if (!data) return;
+
+    // Extract unique song types
+    data.songs.forEach(song => {
       this.songTypes.add(song.type);
       
       if (!this.authors.has(song.author)) {
@@ -40,16 +91,16 @@ export class LyricsService {
       }
     });
 
-    // Group songs by author, album, and track
-    this.groupSongsByStructure();
+    // Group songs by author, album, and track for this specific author
+    this.groupSongsByStructure(data);
   }
 
-  private groupSongsByStructure(): void {
-    if (!this.data) return;
+  private groupSongsByStructure(data: LyricsData): void {
+    if (!data) return;
 
     const authorGroups = new Map<string, Map<string, Map<string, Song[]>>>();
 
-    this.data.songs.forEach(song => {
+    data.songs.forEach(song => {
       if (!authorGroups.has(song.author)) {
         authorGroups.set(song.author, new Map());
       }
@@ -71,7 +122,16 @@ export class LyricsService {
 
     // Convert to Author structure
     authorGroups.forEach((albumMap, authorName) => {
-      const author = this.authors.get(authorName)!;
+      let author = this.authors.get(authorName);
+      if (!author) {
+        author = {
+          id: authorName.toLowerCase().replace(/\s+/g, '-'),
+          name: authorName,
+          albums: []
+        };
+        this.authors.set(authorName, author);
+      }
+      
       const albums: Album[] = [];
 
       albumMap.forEach((trackMap, albumName) => {
@@ -96,6 +156,10 @@ export class LyricsService {
     });
   }
 
+  getAvailableAuthors(): AuthorIndex[] {
+    return this.authorsIndex?.authors || [];
+  }
+
   getAuthors(): Author[] {
     return Array.from(this.authors.values());
   }
@@ -104,18 +168,28 @@ export class LyricsService {
     return Array.from(this.authors.values()).find(author => author.id === authorId);
   }
 
-  getSongsByAuthor(authorName: string): Song[] {
-    if (!this.data) return [];
-    return this.data.songs.filter(song => song.author === authorName);
+  async getSongsByAuthor(authorName: string): Promise<Song[]> {
+    // Find the author ID from the index
+    const authorInfo = this.authorsIndex?.authors.find(a => a.name === authorName);
+    if (!authorInfo) return [];
+
+    // Load the author's data if not already loaded
+    const data = await this.loadAuthorData(authorInfo.id);
+    return data.songs.filter(song => song.author === authorName);
   }
 
   getSongTypes(): string[] {
     return Array.from(this.songTypes).sort();
   }
 
-  getSongsByType(type: string): Song[] {
-    if (!this.data) return [];
-    return this.data.songs.filter(song => song.type === type);
+  async getSongsByType(type: string): Promise<Song[]> {
+    const allSongs: Song[] = [];
+    
+    for (const [authorId, data] of this.authorData.entries()) {
+      allSongs.push(...data.songs.filter(song => song.type === type));
+    }
+    
+    return allSongs;
   }
 
   getSupportedLanguages(): SupportedLanguage[] {

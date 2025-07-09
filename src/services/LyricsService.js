@@ -1,31 +1,75 @@
 export class LyricsService {
     constructor() {
-        this.data = null;
+        this.authorsIndex = null;
+        this.authorData = new Map();
         this.authors = new Map();
         this.songTypes = new Set();
     }
-    async loadData() {
+    async loadAuthorsIndex() {
         try {
             const cacheBuster = `?cb=${new Date().getTime()}`;
-            const response = await fetch(`/capoeira_lyrics.json${cacheBuster}`);
+            const response = await fetch(`/authors-index.json${cacheBuster}`);
             if (!response.ok) {
-                throw new Error(`Failed to load lyrics data: ${response.statusText}`);
+                throw new Error(`Failed to load authors index: ${response.statusText}`);
             }
             const data = await response.json();
-            this.data = data;
-            this.processData();
+            this.authorsIndex = data;
             return data;
         }
         catch (error) {
-            console.error('Error loading lyrics data:', error);
+            console.error('Error loading authors index:', error);
             throw error;
         }
     }
-    processData() {
-        if (!this.data)
+    async loadAuthorData(authorId) {
+        if (this.authorData.has(authorId)) {
+            return this.authorData.get(authorId);
+        }
+        if (!this.authorsIndex) {
+            await this.loadAuthorsIndex();
+        }
+        const authorInfo = this.authorsIndex.authors.find(a => a.id === authorId);
+        if (!authorInfo) {
+            throw new Error(`Author ${authorId} not found in index`);
+        }
+        try {
+            const cacheBuster = `?cb=${new Date().getTime()}`;
+            const response = await fetch(`/authors/${authorInfo.file}${cacheBuster}`);
+            if (!response.ok) {
+                throw new Error(`Failed to load data for author ${authorId}: ${response.statusText}`);
+            }
+            const data = await response.json();
+            this.authorData.set(authorId, data);
+            this.processAuthorData(authorId, data);
+            return data;
+        }
+        catch (error) {
+            console.error(`Error loading data for author ${authorId}:`, error);
+            throw error;
+        }
+    }
+    async loadData() {
+        // Load authors index first
+        await this.loadAuthorsIndex();
+        // Load all author data
+        const allSongs = [];
+        for (const authorInfo of this.authorsIndex.authors) {
+            try {
+                const authorData = await this.loadAuthorData(authorInfo.id);
+                allSongs.push(...authorData.songs);
+            }
+            catch (error) {
+                console.warn(`Failed to load data for author ${authorInfo.id}:`, error);
+            }
+        }
+        // Return combined data
+        return { songs: allSongs };
+    }
+    processAuthorData(authorId, data) {
+        if (!data)
             return;
-        // Extract unique authors and song types
-        this.data.songs.forEach(song => {
+        // Extract unique song types
+        data.songs.forEach(song => {
             this.songTypes.add(song.type);
             if (!this.authors.has(song.author)) {
                 this.authors.set(song.author, {
@@ -35,14 +79,14 @@ export class LyricsService {
                 });
             }
         });
-        // Group songs by author, album, and track
-        this.groupSongsByStructure();
+        // Group songs by author, album, and track for this specific author
+        this.groupSongsByStructure(data);
     }
-    groupSongsByStructure() {
-        if (!this.data)
+    groupSongsByStructure(data) {
+        if (!data)
             return;
         const authorGroups = new Map();
-        this.data.songs.forEach(song => {
+        data.songs.forEach(song => {
             if (!authorGroups.has(song.author)) {
                 authorGroups.set(song.author, new Map());
             }
@@ -58,7 +102,15 @@ export class LyricsService {
         });
         // Convert to Author structure
         authorGroups.forEach((albumMap, authorName) => {
-            const author = this.authors.get(authorName);
+            let author = this.authors.get(authorName);
+            if (!author) {
+                author = {
+                    id: authorName.toLowerCase().replace(/\s+/g, '-'),
+                    name: authorName,
+                    albums: []
+                };
+                this.authors.set(authorName, author);
+            }
             const albums = [];
             albumMap.forEach((trackMap, albumName) => {
                 const tracks = [];
@@ -78,24 +130,33 @@ export class LyricsService {
             author.albums = albums;
         });
     }
+    getAvailableAuthors() {
+        return this.authorsIndex?.authors || [];
+    }
     getAuthors() {
         return Array.from(this.authors.values());
     }
     getAuthorById(authorId) {
         return Array.from(this.authors.values()).find(author => author.id === authorId);
     }
-    getSongsByAuthor(authorName) {
-        if (!this.data)
+    async getSongsByAuthor(authorName) {
+        // Find the author ID from the index
+        const authorInfo = this.authorsIndex?.authors.find(a => a.name === authorName);
+        if (!authorInfo)
             return [];
-        return this.data.songs.filter(song => song.author === authorName);
+        // Load the author's data if not already loaded
+        const data = await this.loadAuthorData(authorInfo.id);
+        return data.songs.filter(song => song.author === authorName);
     }
     getSongTypes() {
         return Array.from(this.songTypes).sort();
     }
-    getSongsByType(type) {
-        if (!this.data)
-            return [];
-        return this.data.songs.filter(song => song.type === type);
+    async getSongsByType(type) {
+        const allSongs = [];
+        for (const [authorId, data] of this.authorData.entries()) {
+            allSongs.push(...data.songs.filter(song => song.type === type));
+        }
+        return allSongs;
     }
     getSupportedLanguages() {
         return ['english', 'español'];

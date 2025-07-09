@@ -5,9 +5,9 @@ export class LyricsRenderer {
     }
     renderLyrics(songs, container) {
         if (!songs || songs.length === 0) {
-            // Get authors for the selector options
-            const authors = this.lyricsService.getAuthors();
-            const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
+            // Get available authors from the index
+            const availableAuthors = this.lyricsService.getAvailableAuthors();
+            const authorOptions = availableAuthors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
             container.innerHTML = `
         <div class="sticky-header" data-track="Default">
           <div class="song-selector">
@@ -25,9 +25,9 @@ export class LyricsRenderer {
         // Group songs by track
         const trackGroups = this.groupSongsByTrack(songs);
         let lyricsHTML = '';
-        // Get authors for the selector options
-        const authors = this.lyricsService.getAuthors();
-        const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
+        // Get available authors from the index
+        const availableAuthors = this.lyricsService.getAvailableAuthors();
+        const authorOptions = availableAuthors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
         // Add sticky header for lyrics column with song selector only
         lyricsHTML += `
       <div class="sticky-header">
@@ -66,9 +66,9 @@ export class LyricsRenderer {
     }
     renderTranslations(songs, language, container) {
         if (!songs || songs.length === 0) {
-            // Get authors for the selector options
-            const authors = this.lyricsService.getAuthors();
-            const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
+            // Get available authors from the index
+            const availableAuthors = this.lyricsService.getAvailableAuthors();
+            const authorOptions = availableAuthors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
             container.innerHTML = `
         <div class="sticky-header" data-track="Default">
           <div class="language-selector">
@@ -86,9 +86,9 @@ export class LyricsRenderer {
         }
         const trackGroups = this.groupSongsByTrack(songs);
         let translationsHTML = '';
-        // Get authors for the selector options
-        const authors = this.lyricsService.getAuthors();
-        const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
+        // Get available authors from the index
+        const availableAuthors = this.lyricsService.getAvailableAuthors();
+        const authorOptions = availableAuthors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
         // Add sticky header for translations column with language selector only
         translationsHTML += `
       <div class="sticky-header">

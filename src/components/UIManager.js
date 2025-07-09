@@ -42,7 +42,7 @@ export class UIManager {
         this.updateAllLanguageSelectors(false); // enable all language selectors
         try {
             this.setState({ isLoading: true, error: null });
-            const songs = this.lyricsService.getSongsByAuthor(selectedAuthor);
+            const songs = await this.lyricsService.getSongsByAuthor(selectedAuthor);
             if (songs.length === 0) {
                 this.setState({ error: 'No songs found for this author' });
                 return;
@@ -51,6 +51,8 @@ export class UIManager {
             // Set default language and render translations
             this.updateAllLanguageSelectors(false, 'en'); // Set all language selectors to English
             this.renderer.renderTranslations(songs, this.state.selectedLanguage, this.translationsContainer);
+            // Update all author selectors to show the selected author
+            this.updateAllAuthorSelectors(false, selectedAuthor);
             // Notify that content has been updated (for scroll tracking)
             this.notifyContentUpdated();
             this.setState({ isLoading: false });
@@ -63,26 +65,27 @@ export class UIManager {
             });
         }
     }
-    handleLanguageChange(event) {
+    async handleLanguageChange(event) {
         const target = event.target;
         const selectedLanguageCode = target.value;
         if (!selectedLanguageCode || !this.state.selectedAuthor) {
             this.translationsContainer.innerHTML = '';
-            return Promise.resolve();
+            return;
         }
         // Map short code to full language name
         const selectedLanguage = this.mapLanguageCodeToName(selectedLanguageCode);
         this.state.selectedLanguage = selectedLanguage;
         try {
-            const songs = this.lyricsService.getSongsByAuthor(this.state.selectedAuthor);
+            const songs = await this.lyricsService.getSongsByAuthor(this.state.selectedAuthor);
             this.renderer.renderTranslations(songs, selectedLanguage, this.translationsContainer);
+            // Update all language selectors to show the selected language
+            this.updateAllLanguageSelectors(false, selectedLanguageCode);
         }
         catch (error) {
             this.setState({
                 error: error instanceof Error ? error.message : 'Error loading translations'
             });
         }
-        return Promise.resolve();
     }
     clearDisplay() {
         this.renderer.clearDisplay(this.lyricsContainer, this.translationsContainer);
@@ -109,12 +112,28 @@ export class UIManager {
         this.loadInitialData();
     }
     loadInitialData() {
-        // Load authors and render empty state
-        const authors = this.lyricsService.getAuthors();
-        if (authors.length > 0) {
+        // Load available authors and render empty state
+        const availableAuthors = this.lyricsService.getAvailableAuthors();
+        if (availableAuthors.length > 0) {
             // Render empty state with selectors
             this.renderer.renderLyrics([], this.lyricsContainer);
             this.renderer.renderTranslations([], 'english', this.translationsContainer);
+            // If there are existing selections, update the selectors to show them
+            setTimeout(() => {
+                if (this.state.selectedAuthor) {
+                    this.updateAllAuthorSelectors(false, this.state.selectedAuthor);
+                }
+                // Set language selector to show current language
+                const languageCode = this.getLanguageCode(this.state.selectedLanguage);
+                this.updateAllLanguageSelectors(false, languageCode);
+            }, 50);
+        }
+    }
+    getLanguageCode(language) {
+        switch (language) {
+            case 'english': return 'en';
+            case 'español': return 'es';
+            default: return 'en';
         }
     }
     updateAllLanguageSelectors(disabled, value) {

@@ -64,7 +64,7 @@ export class UIManager {
 
     try {
       this.setState({ isLoading: true, error: null });
-      const songs = this.lyricsService.getSongsByAuthor(selectedAuthor);
+      const songs = await this.lyricsService.getSongsByAuthor(selectedAuthor);
       
       if (songs.length === 0) {
         this.setState({ error: 'No songs found for this author' });
@@ -93,13 +93,13 @@ export class UIManager {
     }
   }
 
-  private handleLanguageChange(event: Event): Promise<void> {
+  private async handleLanguageChange(event: Event): Promise<void> {
     const target = event.target as HTMLSelectElement;
     const selectedLanguageCode = target.value;
     
     if (!selectedLanguageCode || !this.state.selectedAuthor) {
       this.translationsContainer.innerHTML = '';
-      return Promise.resolve();
+      return;
     }
 
     // Map short code to full language name
@@ -107,7 +107,7 @@ export class UIManager {
     this.state.selectedLanguage = selectedLanguage;
 
     try {
-      const songs = this.lyricsService.getSongsByAuthor(this.state.selectedAuthor);
+      const songs = await this.lyricsService.getSongsByAuthor(this.state.selectedAuthor);
       this.renderer.renderTranslations(songs, selectedLanguage, this.translationsContainer);
       
       // Update all language selectors to show the selected language
@@ -117,8 +117,6 @@ export class UIManager {
         error: error instanceof Error ? error.message : 'Error loading translations' 
       });
     }
-
-    return Promise.resolve();
   }
 
   private clearDisplay(): void {
@@ -151,9 +149,9 @@ export class UIManager {
   }
 
   private loadInitialData(): void {
-    // Load authors and render empty state
-    const authors = this.lyricsService.getAuthors();
-    if (authors.length > 0) {
+    // Load available authors and render empty state
+    const availableAuthors = this.lyricsService.getAvailableAuthors();
+    if (availableAuthors.length > 0) {
       // Render empty state with selectors
       this.renderer.renderLyrics([], this.lyricsContainer);
       this.renderer.renderTranslations([], 'english', this.translationsContainer);

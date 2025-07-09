@@ -1,0 +1,22 @@
+{
+  "authors": [
+    {
+      "id": "palmares",
+      "name": "Palmares",
+      "file": "palmares_lyrics.json",
+      "description": "Palmares capoeira lyrics collection",
+      "trackCount": 3,
+      "songCount": 45
+    },
+    {
+      "id": "fica",
+      "name": "FICA",
+      "file": "FICA_lyrics.json",
+      "description": "FICA capoeira lyrics collection",
+      "trackCount": 1,
+      "songCount": 1
+    }
+  ],
+  "lastUpdated": "2024-01-01",
+  "version": "1.0"
+} 

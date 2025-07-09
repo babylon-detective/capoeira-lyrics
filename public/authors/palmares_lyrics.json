@@ -2,7 +2,7 @@
     "songs": [
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "LADAINHA",
@@ -23,7 +23,8 @@
             "Berimbau é um instrumento|",
             "Berimbau é um instrumento|",
             "Que toca numa corda só|",
-            "Pra tocar São Bento Grande, colega meu|",
+            "Pra tocar São Bento Grande|", 
+            "Colega meu|",
             "Toca Angola em dó maior|",
             "Agora acabei de crer, colega meu|",
             "Berimbau é o maior|",
@@ -41,7 +42,8 @@
               "Berimbau is an instrument|",
               "Berimbau is an instrument|",
               "Played with only one string|",
-              "To play São Bento Grande, my friend|",
+              "To play São Bento Grande|", 
+              "My friend|",
               "To Plays Angola in C major|",
               "Now Iam convinced, my friend,|",
               "Berimbau is the greatest|",
@@ -58,7 +60,8 @@
               "El berimbau es un instrumento|",
               "El berimbau es un instrumento|",
               "Que toca en una sola cuerda|",
-              "Para tocar São Bento Grande, amigo mío|",
+              "Para tocar São Bento Grande|", 
+              "Amigo mío|",
               "Toca Angola en do mayor|",
               "Ahora he terminado de creer, amigo mío|",
               "El berimbau es el más grande|",
@@ -69,7 +72,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "LOUVAÇÃO",
@@ -104,25 +107,25 @@
           "translations": {
             "english": [
               "Long live my God|",
-              "^Iê, long live my God, comrade|",
+              "^Iê, long live my God, my friend|",
               "Long live my Master|",
-              "^Iê, long live my Master, comrade|",
+              "^Iê, long live my Master, my friend|",
               "The capoeira|",
-              "^Iê, the capoeira, comrade|",
+              "^Iê, the capoeira, my friend|",
               "Play here and there|",
-              "^Iê, play here and there, comrade|",
+              "^Iê, play here and there, my friend|",
               "Play here and here|",
-              "^Iê, play here and here, comrade|",
-              "Iron to pierce|",
-              "^Iê, iron to pierce, comrade|",
-              "Starch to iron|",
-              "^Iê, starch to iron, comrade|",
+              "^Iê, play here and here, my friend|",
+              "Rod for piercing|",
+              "^Iê, rod for piercing, my friend|",
+              "Starch for ironing|",
+              "^Iê, starch for ironing, my friend|",
               "The boy is good|",
-              "^Iê, the boy is good, comrade|",
-              "And headrest|",
-              "^Iê, and headrest, comrade|",
-              "Game of mandinga|",
-              "^Iê, game of mandinga, comrade|"
+              "^Iê, the boy is good, my friend|",
+              "He's a leader|",
+              "^Iê, he's a leader, my friend|",
+              "Mandinga game|",
+              "^Iê, mandinga game, my friend|"
             ],
             "español": [
               "Viva mi Dios|",
@@ -151,7 +154,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -245,7 +248,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -306,7 +309,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -376,7 +379,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -414,30 +417,30 @@
           ],
           "translations": {
             "english": [
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|",
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|",
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|",
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|"
+              "It's in the morning,|",
+              "It's in the morning I'm going|",
+              "Play capoeira 'cause my Mestre said so,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|",
+              "It's in the morning,|",
+              "It's in the morning I'm going|",
+              "Play capoeira 'cause my Mestre said so,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|",
+             "It's in the morning,|",
+              "It's in the morning I'm going|",
+              "Play capoeira 'cause my Mestre said so,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|",
+             "It's in the morning,|",
+              "It's in the morning I'm going,|",
+              "To play capoeira from Angola, I'm going,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|"
             ],
             "español": [
               "Sí, es la mañana,|",
@@ -470,7 +473,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -534,7 +537,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "QUADRA",
@@ -622,7 +625,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -692,7 +695,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "LADAINHA",
@@ -714,7 +717,8 @@
             "Oração de braço forte|",
             "Oração de São Mateo|",
             "Na roda de capoeira|",
-            "Quem pode comigo é Deus, camarada...|"
+            "Quem pode comigo é Deus|",
+            "Camarada...|"
           ],
           "translations": {
             "english": [
@@ -729,7 +733,8 @@
               "Prayer for strong arms|",
               "Prayer to Saint Matthew|",
               "In the capoeira roda|",
-              "The only one who can conquer me is God, my friend.|"
+              "The only one who can conquer me is God|",
+               "My friend.|"
             ],
             "español": [
               "Señora, ¿qué vende allí?|",
@@ -743,14 +748,15 @@
               "Oración para brazos fuertes|",
               "Oración a San Mateo|", 
               "En la roda de capoeira|",
-              "El único que puede vencerme es Dios, mi amigo.|"
+              "El único que puede vencerme es Dios|", 
+              "Mi amigo.|"
             ]
           }
         }
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "LOUVAÇÃO",
@@ -780,7 +786,7 @@
             "english": [
               "The time has come|",
               "^Iê, the time has come, my friend|",
-              "ˇ|",
+              "Let's go|",
               "^Iê, let's go, my friend|",
               "Through the outside world|",
               "^Iê throught the outside world, my friend|",
@@ -814,7 +820,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -908,7 +914,7 @@
       },
      
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1001,104 +1007,104 @@
         }
       },
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
         "title": {
           "português": "PARANÁ É",
-          "english": "IT'S PARANÁ*",
+          "english": "IT'S PARANÁ",
           "español": "ES PARANÁ"
         },
         "lyrics": {
           "português": [
             "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Paraná é, Paraná é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "É Paraná é, Paraná|",
             "Paraná, Paraná, é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou-me embora, vou-me embora, Paraná|",
             "Como eu já disse que eu vou, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou-me embora prà Bahia, Paraná|",
             "Porque lá é meu lugar, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "E Paraná é, Paraná|",
             "Paraná, Paraná, é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou dizer a minha mulher, Paraná|",
             "Capoeira me venceu, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Ela quis bater pé firme, Paraná|",
             "Isso não me aconteceu, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou-me embora dia e noite, Paraná|",
             "Mas não tenho que passar, Paraná|",
-            "Paraná é, Paraná é, Paraná...|"
+            "^Paraná é, Paraná é, Paraná...|"
           ],
           "translations": {
             "english": [
               "It's Paraná, It's Paraná, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "It's Paraná, It's Paraná, Paraná|", 
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "It's Paraná, It's Paraná|",
               "Paraná, Paraná, it's Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm leaving, I'm leaving, Paraná|",
               "Like I said I would, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm leaving for Bahia, Paraná|",
               "Because that's my home, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "It's Paraná, It's Paraná|",
               "Paraná, Paraná, it's Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm going to tell my wife, Paraná|",
               "Capoeira beat me, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "She wanted to put her foot down, Paraná|",
               "But that didn't happen, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm leaving day and night, Paraná|",
               "But I don't have to go through, Paraná|",
-              "It's Paraná, It's Paraná, Paraná...|"
+              "^It's Paraná, It's Paraná, Paraná...|"
             ],
             "español": [
               "Es Paraná, Es Paraná, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|", 
+              "^Es Paraná, Es Paraná, Paraná|", 
               "Es Paraná, Es Paraná, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Es Paraná, Es Paraná|",
               "Paraná, Paraná, es Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Me voy, me voy, Paraná|",
               "Como ya dije que me iba, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Me voy para Bahía, Paraná|",
               "Porque allí es mi lugar, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Es Paraná, Es Paraná|",
               "Paraná, Paraná, es Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Le voy a decir a mi mujer, Paraná|",
               "Capoeira me venció, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Ella quiso poner el pie firme, Paraná|",
               "Eso no me sucedió, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Me voy día y noche, Paraná|",
               "Pero no tengo que pasar, Paraná|",
-              "Es Paraná, Es Paraná, Paraná...|"
+              "^Es Paraná, Es Paraná, Paraná...|"
             ]
           } 
         }
       } ,
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1112,13 +1118,13 @@
             "Oiaiá, o senhor tá me chamando|",
             "O senhor tá me chamando, oiaiá|",
             "Me chamando pra jogar, oiaiá|",
-            "Oiaiá, o senhor tá me chamando|",
+            "^Oiaiá, o senhor tá me chamando|",
             "O senhor tá me chamando, oiaiá|", 
             "Me chamando pra jogar, oiaiá|",
-            "Oiaiá, o senhor tá me chamando|",
+            "^Oiaiá, o senhor tá me chamando|",
             "O senhor tá me chamando, oiaiá|",
             "Me chamando pra jogar, oiaiá|",
-            "Oiaiá, o senhor tá me chamando|",
+            "^Oiaiá, o senh^or tá me chamando|",
             "O senhor tá me chamando, oiaiá|",
             "Me chamando pra jogar, oiaiá...|"
           ],
@@ -1127,13 +1133,13 @@
             "Oiaiá, the master is calling me|",
             "The master is calling me, oiaiá|", 
             "Calling me to play, oiaiá|",
-            "Oiaiá, the master is calling me|",
+            "^Oiaiá, the master is calling me|",
             "The master is calling me, oiaiá|",
             "Calling me to play, oiaiá|", 
-            "Oiaiá, the master is calling me|",
+            "^Oiaiá, the master is calling me|",
             "The master is calling me, oiaiá|",
             "Calling me to play, oiaiá|",
-            "Oiaiá, the master is calling me|", 
+            "^Oiaiá, the master is calling me|", 
             "The master is calling me, oiaiá|",
             "Calling me to play, oiaiá...|"
             ],
@@ -1141,13 +1147,13 @@
             "Oiaiá, el maestro me llama|",
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá|",
-            "Oiaiá, el maestro me llama|",
+            "^Oiaiá, el maestro me llama|",
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá|",
-            "Oiaiá, el maestro me llama|", 
+            "^Oiaiá, el maestro me llama|", 
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá|",
-            "Oiaiá, el maestro me llama|",
+            "^Oiaiá, el maestro me llama|",
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá...|"
             ]
@@ -1156,7 +1162,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "QUADRA",
@@ -1226,7 +1232,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "LADAINHA",
@@ -1243,7 +1249,8 @@
             "Do gengibre do Chinatown, ora meu Deus|",
             "Aos esquilos no Parque Central|",
             "Vai andando com carinho, ora meu Deus|", 
-            "Ouvir o som do berimbau, camarada...|"
+            "Ouvir o som do berimbau|", 
+            "Camarada...|"
           ],
           "translations": {
             "english": [
@@ -1253,7 +1260,8 @@
             "From the ginger of Chinatown, oh my Lord|",
             "To the squirrels in Central Park|",
             "Walk around affectionately, oh my Lord|",
-            "Hearing the sound of the berimbau, my friend...|"
+            "Hearing the sound of the berimbau|", 
+            "My friend...|"
             ],
             "español": [
               "Nueva York es la ciudad|",
@@ -1262,14 +1270,15 @@
               "Del gengibre de Chinatown, oh mi Dios|",
               "A los ardillas en el Parque Central|",
               "Vaya andando con cariño, oh mi Dios|",
-              "Oyendo el sonido del berimbau, amigo...|" 
+              "Oyendo el sonido del berimbau|", 
+              "Amigo...|" 
             ]
           } 
         }
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "LOUVAÇÃO",
@@ -1340,7 +1349,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1410,7 +1419,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1459,7 +1468,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1557,7 +1566,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1610,7 +1619,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",

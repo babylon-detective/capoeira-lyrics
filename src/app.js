@@ -17,9 +17,9 @@ export class LyricsApp {
             console.log('Initializing Lyrics App...');
             // Test formatting
             testFormatting();
-            // Load lyrics data
-            await this.lyricsService.loadData();
-            console.log('Lyrics data loaded successfully');
+            // Load authors index first
+            await this.lyricsService.loadAuthorsIndex();
+            console.log('Authors index loaded successfully');
             // Populate UI with available authors
             this.uiManager.populateAuthorSelect();
             console.log('UI initialized successfully');

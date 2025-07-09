@@ -2,7 +2,7 @@
     "songs": [
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "LADAINHA",
@@ -23,7 +23,8 @@
             "Berimbau é um instrumento|",
             "Berimbau é um instrumento|",
             "Que toca numa corda só|",
-            "Pra tocar São Bento Grande, colega meu|",
+            "Pra tocar São Bento Grande|", 
+            "Colega meu|",
             "Toca Angola em dó maior|",
             "Agora acabei de crer, colega meu|",
             "Berimbau é o maior|",
@@ -41,7 +42,8 @@
               "Berimbau is an instrument|",
               "Berimbau is an instrument|",
               "Played with only one string|",
-              "To play São Bento Grande, my friend|",
+              "To play São Bento Grande|", 
+              "My friend|",
               "To Plays Angola in C major|",
               "Now Iam convinced, my friend,|",
               "Berimbau is the greatest|",
@@ -58,7 +60,8 @@
               "El berimbau es un instrumento|",
               "El berimbau es un instrumento|",
               "Que toca en una sola cuerda|",
-              "Para tocar São Bento Grande, amigo mío|",
+              "Para tocar São Bento Grande|", 
+              "Amigo mío|",
               "Toca Angola en do mayor|",
               "Ahora he terminado de creer, amigo mío|",
               "El berimbau es el más grande|",
@@ -69,7 +72,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "LOUVAÇÃO",
@@ -151,7 +154,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -245,7 +248,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -306,7 +309,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -376,7 +379,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -470,7 +473,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -534,7 +537,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "QUADRA",
@@ -622,7 +625,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -692,7 +695,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "LADAINHA",
@@ -753,7 +756,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "LOUVAÇÃO",
@@ -817,7 +820,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -911,7 +914,7 @@
       },
      
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1004,7 +1007,7 @@
         }
       },
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1101,7 +1104,7 @@
       } ,
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1159,7 +1162,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 2",
         "type": "QUADRA",
@@ -1229,7 +1232,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "LADAINHA",
@@ -1272,7 +1275,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "LOUVAÇÃO",
@@ -1343,7 +1346,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1413,7 +1416,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1462,7 +1465,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1560,7 +1563,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1613,7 +1616,7 @@
       },
 
       {
-        "author": "Author 1",
+        "author": "Mestre Nô",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",

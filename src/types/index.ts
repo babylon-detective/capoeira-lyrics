@@ -76,4 +76,20 @@ export interface AppState {
 export interface LyricsEvent {
   type: 'author-changed' | 'language-changed' | 'song-loaded' | 'error';
   data?: any;
+}
+
+// Authors index types
+export interface AuthorIndex {
+  id: string;
+  name: string;
+  file: string;
+  description?: string;
+  trackCount?: number;
+  songCount?: number;
+}
+
+export interface AuthorsIndexData {
+  authors: AuthorIndex[];
+  lastUpdated: string;
+  version: string;
 } 

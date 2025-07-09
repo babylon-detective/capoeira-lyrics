@@ -126,7 +126,7 @@ async function initializeApp() {
     try {
         // Add cache-busting parameter to prevent browser from using cached version
         const cacheBuster = `?cb=${new Date().getTime()}`;
-        const response = await fetch('capoeira_lyrics.json' + cacheBuster);
+        const response = await fetch('palmares_lyrics.json' + cacheBuster);
         const data = await response.json();
         console.log('Loaded data:', data);
         console.log('Total number of songs:', data.songs.length);

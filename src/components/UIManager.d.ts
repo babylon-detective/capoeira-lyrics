@@ -18,6 +18,7 @@ export declare class UIManager {
     private updateUI;
     populateAuthorSelect(): void;
     private loadInitialData;
+    private getLanguageCode;
     private updateAllLanguageSelectors;
     private updateAllAuthorSelectors;
     private mapLanguageCodeToName;

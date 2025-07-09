@@ -1,0 +1,34 @@
+{
+  "songs": [
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "LADAINHA",
+      "title": {
+        "português": "EXEMPLO DE TÍTULO",
+        "english": "EXAMPLE TITLE",
+        "español": "TÍTULO DE EJEMPLO"
+      },
+      "lyrics": {
+        "português": [
+          "Esta é uma linha de exemplo|",
+          "^Este é um coro de exemplo|",
+          "Outra linha normal|"
+        ],
+        "translations": {
+          "english": [
+            "This is an example line|",
+            "^This is an example chorus|",
+            "Another normal line|"
+          ],
+          "español": [
+            "Esta es una línea de ejemplo|",
+            "^Este es un coro de ejemplo|",
+            "Otra línea normal|"
+          ]
+        }
+      }
+    }
+  ]
+}

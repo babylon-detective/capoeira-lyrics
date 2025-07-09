@@ -10,9 +10,9 @@ if [ -f "script.js" ]; then
 fi
 
 # Remove old JSON file from root (it's now in public/)
-if [ -f "capoeira_lyrics.json" ]; then
-    echo "Removing capoeira_lyrics.json from root (it's now in public/)..."
-    rm capoeira_lyrics.json
+if [ -f "palmares_lyrics.json" ]; then
+    echo "Removing palmares_lyrics.json from root (it's now in public/)..."
+    rm palmares_lyrics.json
 fi
 
 echo "Cleanup complete!"

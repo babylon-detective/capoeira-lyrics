@@ -61,4 +61,17 @@ export interface LyricsEvent {
     type: 'author-changed' | 'language-changed' | 'song-loaded' | 'error';
     data?: any;
 }
+export interface AuthorIndex {
+    id: string;
+    name: string;
+    file: string;
+    description?: string;
+    trackCount?: number;
+    songCount?: number;
+}
+export interface AuthorsIndexData {
+    authors: AuthorIndex[];
+    lastUpdated: string;
+    version: string;
+}
 //# sourceMappingURL=index.d.ts.map
