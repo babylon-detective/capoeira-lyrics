@@ -77,6 +77,9 @@ export class UIManager {
       this.updateAllLanguageSelectors(false, 'en'); // Set all language selectors to English
       this.renderer.renderTranslations(songs, this.state.selectedLanguage, this.translationsContainer);
       
+      // Update all author selectors to show the selected author
+      this.updateAllAuthorSelectors(false, selectedAuthor);
+      
       // Notify that content has been updated (for scroll tracking)
       this.notifyContentUpdated();
       
@@ -106,6 +109,9 @@ export class UIManager {
     try {
       const songs = this.lyricsService.getSongsByAuthor(this.state.selectedAuthor);
       this.renderer.renderTranslations(songs, selectedLanguage, this.translationsContainer);
+      
+      // Update all language selectors to show the selected language
+      this.updateAllLanguageSelectors(false, selectedLanguageCode);
     } catch (error) {
       this.setState({ 
         error: error instanceof Error ? error.message : 'Error loading translations' 
@@ -151,6 +157,24 @@ export class UIManager {
       // Render empty state with selectors
       this.renderer.renderLyrics([], this.lyricsContainer);
       this.renderer.renderTranslations([], 'english', this.translationsContainer);
+      
+      // If there are existing selections, update the selectors to show them
+      setTimeout(() => {
+        if (this.state.selectedAuthor) {
+          this.updateAllAuthorSelectors(false, this.state.selectedAuthor);
+        }
+        // Set language selector to show current language
+        const languageCode = this.getLanguageCode(this.state.selectedLanguage);
+        this.updateAllLanguageSelectors(false, languageCode);
+      }, 50);
+    }
+  }
+  
+  private getLanguageCode(language: SupportedLanguage): string {
+    switch (language) {
+      case 'english': return 'en';
+      case 'español': return 'es';
+      default: return 'en';
     }
   }
 

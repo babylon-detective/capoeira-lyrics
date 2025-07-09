@@ -9,7 +9,33 @@ export class MobileScrollDetector {
     this.lyricsColumn = document.querySelector('.lyrics-column') as HTMLElement;
     this.translationColumn = document.querySelector('.translation-column') as HTMLElement;
     
+    // Fix for mobile browser initial positioning
+    this.fixMobileViewport();
+    
     this.initializeScrollDetection();
+  }
+
+  private fixMobileViewport(): void {
+    // Ensure sticky headers are properly positioned on mobile load
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      // Force repaint to fix mobile browser rendering issues
+      setTimeout(() => {
+        const stickyHeaders = document.querySelectorAll('.sticky-header');
+        stickyHeaders.forEach(header => {
+          const element = header as HTMLElement;
+          element.style.transform = 'translateZ(0)';
+          element.style.willChange = 'transform';
+        });
+        
+        const trackHeadings = document.querySelectorAll('.track-heading');
+        trackHeadings.forEach(heading => {
+          const element = heading as HTMLElement;
+          element.style.transform = 'translateZ(0)';
+          element.style.willChange = 'transform';
+        });
+      }, 100);
+    }
   }
 
   private initializeScrollDetection(): void {

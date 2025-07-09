@@ -4,6 +4,7 @@ export declare class MobileScrollDetector {
     private translationColumn;
     private currentActiveColumn;
     constructor();
+    private fixMobileViewport;
     private initializeScrollDetection;
     private handleScroll;
     private calculateVisibility;

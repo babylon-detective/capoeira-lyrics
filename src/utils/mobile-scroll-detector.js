@@ -4,7 +4,30 @@ export class MobileScrollDetector {
         this.columnsContainer = document.querySelector('.columns-container');
         this.lyricsColumn = document.querySelector('.lyrics-column');
         this.translationColumn = document.querySelector('.translation-column');
+        // Fix for mobile browser initial positioning
+        this.fixMobileViewport();
         this.initializeScrollDetection();
+    }
+    fixMobileViewport() {
+        // Ensure sticky headers are properly positioned on mobile load
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile) {
+            // Force repaint to fix mobile browser rendering issues
+            setTimeout(() => {
+                const stickyHeaders = document.querySelectorAll('.sticky-header');
+                stickyHeaders.forEach(header => {
+                    const element = header;
+                    element.style.transform = 'translateZ(0)';
+                    element.style.willChange = 'transform';
+                });
+                const trackHeadings = document.querySelectorAll('.track-heading');
+                trackHeadings.forEach(heading => {
+                    const element = heading;
+                    element.style.transform = 'translateZ(0)';
+                    element.style.willChange = 'transform';
+                });
+            }, 100);
+        }
     }
     initializeScrollDetection() {
         if (!this.columnsContainer || !this.lyricsColumn || !this.translationColumn) {

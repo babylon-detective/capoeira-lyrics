@@ -104,25 +104,25 @@
           "translations": {
             "english": [
               "Long live my God|",
-              "^Iê, long live my God, comrade|",
+              "^Iê, long live my God, my friend|",
               "Long live my Master|",
-              "^Iê, long live my Master, comrade|",
+              "^Iê, long live my Master, my friend|",
               "The capoeira|",
-              "^Iê, the capoeira, comrade|",
+              "^Iê, the capoeira, my friend|",
               "Play here and there|",
-              "^Iê, play here and there, comrade|",
+              "^Iê, play here and there, my friend|",
               "Play here and here|",
-              "^Iê, play here and here, comrade|",
-              "Iron to pierce|",
-              "^Iê, iron to pierce, comrade|",
-              "Starch to iron|",
-              "^Iê, starch to iron, comrade|",
+              "^Iê, play here and here, my friend|",
+              "Rod for piercing|",
+              "^Iê, rod for piercing, my friend|",
+              "Starch for ironing|",
+              "^Iê, starch for ironing, my friend|",
               "The boy is good|",
-              "^Iê, the boy is good, comrade|",
-              "And headrest|",
-              "^Iê, and headrest, comrade|",
-              "Game of mandinga|",
-              "^Iê, game of mandinga, comrade|"
+              "^Iê, the boy is good, my friend|",
+              "He's a leader|",
+              "^Iê, he's a leader, my friend|",
+              "Mandinga game|",
+              "^Iê, mandinga game, my friend|"
             ],
             "español": [
               "Viva mi Dios|",
@@ -414,30 +414,30 @@
           ],
           "translations": {
             "english": [
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|",
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|",
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|",
-              "Yes, it's morning,|",
-              "Yes, it's morning,|",
-              "Play capoeira that the Master ordered,|",
-              "^Yes, it's morning,|",
-              "^Yes, it's morning,|",
-              "^Play capoeira that the Master ordered,|"
+              "It's in the morning,|",
+              "It's in the morning I'm going|",
+              "Play capoeira 'cause my Mestre said so,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|",
+              "It's in the morning,|",
+              "It's in the morning I'm going|",
+              "Play capoeira 'cause my Mestre said so,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|",
+             "It's in the morning,|",
+              "It's in the morning I'm going|",
+              "Play capoeira 'cause my Mestre said so,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|",
+             "It's in the morning,|",
+              "It's in the morning I'm going,|",
+              "To play capoeira from Angola, I'm going,|",
+              "^It's in the morning,|",
+              "^It's in the morning I'm going|",
+              "^Play capoeira 'cause my Mestre said so,|"
             ],
             "español": [
               "Sí, es la mañana,|",
@@ -710,11 +710,12 @@
             "Xique-xique, Macambira|",
             "Joga pra cima de mim|",
             "Eu sou braço de maré|",
-            "Mais também sou mar sem fi|",
+            "Mais também sou mar sem fim|",
             "Oração de braço forte|",
             "Oração de São Mateo|",
             "Na roda de capoeira|",
-            "Quem pode comigo é Deus, camarada...|"
+            "Quem pode comigo é Deus|",
+            "Camarada...|"
           ],
           "translations": {
             "english": [
@@ -729,7 +730,8 @@
               "Prayer for strong arms|",
               "Prayer to Saint Matthew|",
               "In the capoeira roda|",
-              "The only one who can conquer me is God, my friend.|"
+              "The only one who can conquer me is God|",
+               "My friend.|"
             ],
             "español": [
               "Señora, ¿qué vende allí?|",
@@ -743,7 +745,8 @@
               "Oración para brazos fuertes|",
               "Oración a San Mateo|", 
               "En la roda de capoeira|",
-              "El único que puede vencerme es Dios, mi amigo.|"
+              "El único que puede vencerme es Dios|", 
+              "Mi amigo.|"
             ]
           }
         }
@@ -780,7 +783,7 @@
             "english": [
               "The time has come|",
               "^Iê, the time has come, my friend|",
-              "ˇ|",
+              "Let's go|",
               "^Iê, let's go, my friend|",
               "Through the outside world|",
               "^Iê throught the outside world, my friend|",
@@ -1638,6 +1641,7 @@
           "^Deus salve o negro|",
           "^O negro nagô|",
           "Hoje os tempos estão mudados|",
+          "E a escravidão acabou|",
           "E no tempo que é capoeira|",
           "Cantavam em lingua nagô|",
           "^Navio negreiro|",
@@ -1702,7 +1706,7 @@
           } 
         }
       }
-      
+
     ]
 }
 
