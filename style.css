@@ -85,20 +85,77 @@ h2:not(.sticky-header h2):not(.track-heading) {
 .sticky-header {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     background-color: #f9f9f9;
     z-index: 100;
     padding: 12px 20px;
     border-bottom: 2px solid #ddd;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 0;
     min-height: 60px;
-    width: 100%;
     box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Position sticky headers to align with their respective columns */
+.lyrics-column .sticky-header {
+    left: 20px;
+    right: 50%;
+    margin-right: 10px;
+}
+
+.translation-column .sticky-header {
+    left: 50%;
+    right: 20px;
+    margin-left: 10px;
+}
+
+/* Mobile responsive sticky header behavior */
+@media screen and (max-width: 768px) {
+    /* On mobile, both sticky headers should span full width */
+    .lyrics-column .sticky-header,
+    .translation-column .sticky-header {
+        left: 0;
+        right: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    /* Default state: show lyrics column selector */
+    .lyrics-column .sticky-header {
+        display: flex;
+    }
+    
+    .translation-column .sticky-header {
+        display: none;
+    }
+    
+    /* When lyrics column is active, show song selector */
+    .lyrics-column.active .sticky-header {
+        display: flex;
+    }
+    
+    .lyrics-column:not(.active) .sticky-header {
+        display: none;
+    }
+    
+    /* When translation column is active, show language selector */
+    .translation-column.active .sticky-header {
+        display: flex;
+    }
+    
+    .translation-column:not(.active) .sticky-header {
+        display: none;
+    }
+    
+    /* Ensure track headings also adapt to mobile */
+    .track-heading {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
 }
 
 .sticky-header .song-selector,
@@ -107,23 +164,11 @@ h2:not(.sticky-header h2):not(.track-heading) {
     position: static;
     border-bottom: none;
     padding: 0;
-    flex: 0 0 auto;
+    flex: 1;
     text-align: center;
-    width: 50%;
     display: flex;
     justify-content: center;
-    margin-right: 10px;
-}
-
-.sticky-header .language-selector {
-    margin-right: 0;
-    margin-left: 10px;
-}
-
-/* When sticky header has only one selector, make it full width */
-.sticky-header:has(.song-selector:only-child) .song-selector {
     width: 100%;
-    margin-right: 0;
 }
 
 .sticky-header .song-selector select,

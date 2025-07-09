@@ -94,12 +94,6 @@ export class LyricsRenderer {
       
       container.innerHTML = `
         <div class="sticky-header" data-track="Default">
-          <div class="song-selector">
-            <select id="songSelect-trans-default">
-              <option value="" disabled selected>Choose an Author...</option>
-              ${authorOptions}
-            </select>
-          </div>
           <div class="language-selector">
             <select id="languageSelect-default" disabled>
               <option value="" disabled selected>Choose language...</option>
@@ -123,15 +117,9 @@ export class LyricsRenderer {
       `<option value="${author.name}">${author.name}</option>`
     ).join('');
 
-    // Add sticky header for translations column with language selector and author selector
+    // Add sticky header for translations column with language selector only
     translationsHTML += `
       <div class="sticky-header">
-        <div class="song-selector">
-          <select id="songSelect-trans">
-            <option value="" disabled selected>Choose an Author...</option>
-            ${authorOptions}
-          </select>
-        </div>
         <div class="language-selector">
           <select id="languageSelect-main">
             <option value="" disabled selected>Choose language...</option>

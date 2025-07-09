@@ -1413,28 +1413,296 @@
         "author": "Author 1",
         "album": "Album Name",
         "track": "Track 3",
-        "type": "LOUVAÇÃO",
+        "type": "CORRIDO",
         "title": {
-          "português": "",
-          "english": "",
-          "español": ""
+          "português": "SANTO ANTÔNIO É PROTETOR",
+          "english": "SAINT ANTHONY IS THE PROTECTOR",
+          "español": "SANTO ANTONIO ES PROTECTOR"
         },
         "lyrics": {
           "português": [
-    
+          "Santo Antônio é protetor|",
+          "Da barquinha de Noé|",
+          "^Santo Antônio é protetor|",
+          "Da barquinha de Noé|",
+          "^Santo Antônio é protetor|", 
+          "Da barquinha de Noé|",
+          "^Santo Antônio é protetor|",
+          "Da barquinha de Noé|",
+          "^Santo Antônio é protetor|"
+          ],
+          "translations": {
+            "english": [
+            "Saint Anthony is the protector|",
+            "Of Noah's Ark|",
+            "^Saint Anthony is the protector|",
+            "Of Noah's Ark|",
+            "^Saint Anthony is the protector|",
+            "Of Noah's Ark|", 
+            "^Saint Anthony is the protector|",
+            "Of Noah's Ark|",
+            "^Saint Anthony is the protector|"
+            ],
+            "español": [
+            "Santo Antonio es protector|",
+            "De la barca de Noé|",
+            "^Santo Antonio es protector|",
+            "De la barca de Noé|",
+            "^Santo Antonio es protector|",
+            "De la barca de Noé|",
+            "^Santo Antonio es protector|", 
+            "De la barca de Noé|",
+            "^Santo Antonio es protector|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 3",
+        "type": "CORRIDO",
+        "title": {
+          "português": "FOI NA BEIRA DO MAR",
+          "english": "IT WAS ON THE SEA SHORE",
+          "español": "FUE EN LA PLAYA DE MAR"
+        },
+        "lyrics": {
+          "português": [
+          "Foi na beira do mar|",
+          "Foi na beira do mar|",
+          "Eu aprendi a jogar capoeira de Angola|",
+          "Na beira do mar|",
+          "^Foi na beira do mar|",
+          "^Foi na beira do mar|",
+          "^Eu aprendi a jogar capoeira de Angola|", 
+          "^Na beira do mar|",
+          "Foi na beira do mar|",
+          "Foi na beira do mar|",
+          "Eu aprendi a jogar capoeira de Angola|",
+          "Na beira do mar|",
+          "^Foi na beira do mar|", 
+          "^Foi na beira do mar|",
+          "^Eu aprendi a jogar capoeira de Angola|",
+          "^Na beira do mar|",
+          "O riacho que corre pro rio|",
+          "E o rio que corre pro mar|",
+          "E o mar é morada de peixe|",
+          "Eu quero ver você jogar|",
+          "^Foi na beira do mar|",
+          "^Foi na beira do mar|",
+          "^Foi na beira do mar|",
+          "^Eu aprendi a jogar capoeira de Angola|",
+          "^Na beira do mar...|"
     
           ],
           "translations": {
             "english": [
-     
+            "It was on the sea shore|",
+            "It was on the sea shore|",
+            "I learned to play capoeira from Angola|",
+            "On the sea shore|",
+            "^It was on the sea shore|",
+            "^It was on the sea shore|",
+            "^I learned to play capoeira from Angola|",
+            "^On the sea shore|",
+            "It was on the sea shore|",
+            "It was on the sea shore|", 
+            "I learned to play capoeira from Angola|",
+            "On the sea shore|",
+            "^It was on the sea shore|",
+            "^It was on the sea shore|",
+            "^I learned to play capoeira from Angola|",
+            "^On the sea shore|",
+            "The stream that flows to the river|",
+            "And the river that flows to the sea|",
+            "And the sea is the home of the fishes|",
+            "I want to see you play|",
+            "^It was on the sea shore|",
+            "^It was on the sea shore|",
+            "^It was on the sea shore|",
+            "^I learned to play capoeira from Angola|",
+            "^On the sea shore...|"
             ],
             "español": [
-        
+            "Fue en la orilla del mar|",
+            "Fue en la orilla del mar|",
+            "Aprendí a jugar capoeira de Angola|", 
+            "En la orilla del mar|",
+            "^Fue en la orilla del mar|",
+            "^Fue en la orilla del mar|",
+            "^Aprendí a jugar capoeira de Angola|",
+            "^En la orilla del mar|",
+            "Fue en la orilla del mar|",
+            "Fue en la orilla del mar|",
+            "Aprendí a jugar capoeira de Angola|",
+            "En la orilla del mar|", 
+            "^Fue en la orilla del mar|",
+            "^Fue en la orilla del mar|",
+            "^Aprendí a jugar capoeira de Angola|",
+            "^En la orilla del mar|",
+            "El arroyo que corre al río|",
+            "Y el río que corre al mar|",
+            "Y el mar es hogar de los peces|",
+            "Quiero verte jugar|",
+            "^Fue en la orilla del mar|",
+            "^Fue en la orilla del mar|",
+            "^Fue en la orilla del mar|",
+            "^Aprendí a jugar capoeira de Angola|",
+            "^En la orilla del mar...|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 3",
+        "type": "CORRIDO",
+        "title": {
+          "português": "VEM BRINCAR MAIS EU",
+          "english": "COME PLAY WITH ME",
+          "español": "VEN A JUGAR CONMIGO"
+        },
+        "lyrics": {
+          "português": [
+          "Vem brincar mais eu|",
+          "^Vem brincar mais eu, meu irmão|",
+          "^Vem brincar mais eu, meu irmão|", 
+          "^Vem brincar mais eu, irmão meu|",
+          "Vem brincar mais eu|",
+          "^Vem brincar mais eu, meu irmão|",
+          "^O, vem brincar mais eu, meu irmão|",
+          "^Vem brincar mais eu, irmão meu|",
+          "Vem brincar mais eu|",
+          "^Vem brincar mais eu, meu irmão...|"
+    
+          ],
+          "translations": {
+            "english": [
+            "Come play with me|",
+            "^Come play with me, my brother|",
+            "^Come play with me, my brother|",
+            "^Come play with me, my brother|", 
+            "Come play with me|",
+            "^Come play with me, my brother|",
+            "^Come play with me, my brother|",
+            "^Come play with me, my brother|",
+            "Come play with me|",
+            "^Come play with me, my brother...|"
+            ],
+            "español": [
+            "Ven a jugar conmigo|",
+            "^Ven a jugar conmigo, hermano mío|",
+            "^Ven a jugar conmigo, hermano mío|",
+            "^Ven a jugar conmigo, hermano mío|",
+            "Ven a jugar conmigo|", 
+            "^Ven a jugar conmigo, hermano mío|",
+            "^Ven a jugar conmigo, hermano mío|",
+            "^Ven a jugar conmigo, hermano mío|",
+            "Ven a jugar conmigo|",
+            "^Ven a jugar conmigo, hermano mío...|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Author 1",
+        "album": "Album Name",
+        "track": "Track 3",
+        "type": "CORRIDO",
+        "title": {
+          "português": "NAVIO NEGREIRO",
+          "english": "SLAVE SHIP",
+          "español": "NAVIO NEGRO"
+        },
+        "lyrics": {
+          "português": [
+          "Navio negreiro|",
+          "De Angola chegou|",
+          "Deus salve o negro|", 
+          "O negro nagô|",
+          "^Navio negreiro|",
+          "^De Angola chegou|",
+          "^Deus salve o negro|",
+          "^O negro nagô|",
+          "Preto velho foi amarrado|",
+          "E jogado no porão|",
+          "E dai aquele amor|",
+          "Que nasceu da escravidão, eu falei|",
+          "^Navio negreiro|",
+          "^De Angola chegou|", 
+          "^Deus salve o negro|",
+          "^O negro nagô|",
+          "Hoje os tempos estão mudados|",
+          "E no tempo que é capoeira|",
+          "Cantavam em lingua nagô|",
+          "^Navio negreiro|",
+          "^De Angola chegou|",
+          "^Deus salve o negro|",
+          "^O negro nagô...|"
+    
+          ],
+          "translations": {
+            "english": [
+            "Slave ship|",
+            "Arrived from Angola|",
+            "God bless the black man|",
+            "The nagô black man|", 
+            "^Slave ship|",
+            "^Arrived from Angola|",
+            "^God bless the black man|",
+            "^The nagô black man|",
+            "Old black man was tied up|",
+            "And thrown down into the ship's hold|",
+            "And thus that love|",
+            "That was born in slavery, I said|",
+            "^Slave ship|",
+            "^Arrived from Angola|",
+            "^God bless the black man|",
+            "^The nagô black man|",
+            "Today the times have changed|",
+            "And slavery has ended|", 
+            "And in the time that is capoeira|",
+            "They spoke in the nagô language|",
+            "^Slave ship|",
+            "^Arrived from Angola|",
+            "^God bless the black man|",
+            "^The nagô black man...|"
+            ],
+            "español": [
+            "Barco negrero|",
+            "Llegó de Angola|",
+            "Dios salve al negro|",
+            "El negro nagô|",
+            "^Barco negrero|", 
+            "^Llegó de Angola|",
+            "^Dios salve al negro|",
+            "^El negro nagô|",
+            "El viejo negro fue atado|",
+            "Y arrojado a la bodega|",
+            "Y así nació ese amor|",
+            "Que nació de la esclavitud, yo dije|",
+            "^Barco negrero|",
+            "^Llegó de Angola|", 
+            "^Dios salve al negro|",
+            "^El negro nagô|",
+            "Hoy los tiempos han cambiado|",
+            "Y la esclavitud ha terminado|",
+            "Y en el tiempo que es capoeira|", 
+            "Hablaban en lengua nagô|",
+            "^Barco negrero|",
+            "^Llegó de Angola|",
+            "^Dios salve al negro|",
+            "^El negro nagô...|"
             ]
           } 
         }
       }
-
-
+      
     ]
 }
+

@@ -5,12 +5,15 @@ export class LyricsRenderer {
     }
     renderLyrics(songs, container) {
         if (!songs || songs.length === 0) {
+            // Get authors for the selector options
+            const authors = this.lyricsService.getAuthors();
+            const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
             container.innerHTML = `
         <div class="sticky-header" data-track="Default">
           <div class="song-selector">
             <select id="songSelect-default">
               <option value="" disabled selected>Choose an Author...</option>
-              <option value="Author 1">Author 1</option>
+              ${authorOptions}
             </select>
           </div>
         </div>
@@ -22,13 +25,16 @@ export class LyricsRenderer {
         // Group songs by track
         const trackGroups = this.groupSongsByTrack(songs);
         let lyricsHTML = '';
+        // Get authors for the selector options
+        const authors = this.lyricsService.getAuthors();
+        const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
         // Add sticky header for lyrics column with song selector only
         lyricsHTML += `
       <div class="sticky-header">
         <div class="song-selector">
           <select id="songSelect-main">
             <option value="" disabled selected>Choose an Author...</option>
-            <option value="Author 1">Author 1</option>
+            ${authorOptions}
           </select>
         </div>
       </div>
@@ -60,14 +66,11 @@ export class LyricsRenderer {
     }
     renderTranslations(songs, language, container) {
         if (!songs || songs.length === 0) {
+            // Get authors for the selector options
+            const authors = this.lyricsService.getAuthors();
+            const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
             container.innerHTML = `
         <div class="sticky-header" data-track="Default">
-          <div class="song-selector">
-            <select id="songSelect-trans-default">
-              <option value="" disabled selected>Choose an Author...</option>
-              <option value="Author 1">Author 1</option>
-            </select>
-          </div>
           <div class="language-selector">
             <select id="languageSelect-default" disabled>
               <option value="" disabled selected>Choose language...</option>
@@ -83,15 +86,12 @@ export class LyricsRenderer {
         }
         const trackGroups = this.groupSongsByTrack(songs);
         let translationsHTML = '';
-        // Add sticky header for translations column with language selector and author selector
+        // Get authors for the selector options
+        const authors = this.lyricsService.getAuthors();
+        const authorOptions = authors.map(author => `<option value="${author.name}">${author.name}</option>`).join('');
+        // Add sticky header for translations column with language selector only
         translationsHTML += `
       <div class="sticky-header">
-        <div class="song-selector">
-          <select id="songSelect-trans">
-            <option value="" disabled selected>Choose an Author...</option>
-            <option value="Author 1">Author 1</option>
-          </select>
-        </div>
         <div class="language-selector">
           <select id="languageSelect-main">
             <option value="" disabled selected>Choose language...</option>

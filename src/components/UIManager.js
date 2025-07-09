@@ -29,9 +29,6 @@ export class UIManager {
         if (target.id && (target.id.startsWith('languageSelect-') || target.id === 'languageSelect-main')) {
             this.handleLanguageChange(event);
         }
-        if (target.id && (target.id.startsWith('songSelect-trans') || target.id === 'songSelect-trans')) {
-            this.handleAuthorChange(event);
-        }
     }
     async handleAuthorChange(event) {
         const target = event.target;
@@ -131,18 +128,9 @@ export class UIManager {
         });
     }
     updateAllAuthorSelectors(disabled, value) {
-        // Update author selectors in lyrics column
+        // Update author selectors in lyrics column only
         const lyricsAuthorSelectors = this.lyricsContainer.querySelectorAll('select[id^="songSelect-"]');
         lyricsAuthorSelectors.forEach(selector => {
-            const selectElement = selector;
-            selectElement.disabled = disabled;
-            if (value) {
-                selectElement.value = value;
-            }
-        });
-        // Update author selectors in translations column
-        const transAuthorSelectors = this.translationsContainer.querySelectorAll('select[id^="songSelect-trans"]');
-        transAuthorSelectors.forEach(selector => {
             const selectElement = selector;
             selectElement.disabled = disabled;
             if (value) {

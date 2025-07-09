@@ -2,6 +2,7 @@ import { LyricsService } from './services/LyricsService';
 import { LyricsRenderer } from './components/LyricsRenderer';
 import { UIManager } from './components/UIManager';
 import { ScrollTracker } from './utils/scroll-tracker';
+import { MobileScrollDetector } from './utils/mobile-scroll-detector';
 import { testFormatting } from './utils/test-formatting';
 
 export class LyricsApp {
@@ -9,6 +10,7 @@ export class LyricsApp {
   private renderer: LyricsRenderer;
   private uiManager: UIManager;
   private scrollTracker: ScrollTracker | null = null;
+  private mobileScrollDetector: MobileScrollDetector | null = null;
 
   constructor() {
     this.lyricsService = new LyricsService();
@@ -34,6 +36,10 @@ export class LyricsApp {
       // Initialize scroll tracking
       this.scrollTracker = new ScrollTracker();
       console.log('Scroll tracker initialized');
+      
+      // Initialize mobile scroll detection
+      this.mobileScrollDetector = new MobileScrollDetector();
+      console.log('Mobile scroll detector initialized');
       
     } catch (error) {
       console.error('Failed to initialize app:', error);
