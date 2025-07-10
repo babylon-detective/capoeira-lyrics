@@ -42,59 +42,24 @@ export class MobileScrollDetector {
                         trackHeadings: trackHeadings.length
                     });
                 }
+                // Only log element state without applying transforms
                 stickyHeaders.forEach((header, index) => {
                     const element = header;
-                    const beforeRect = element.getBoundingClientRect();
-                    const beforeStyle = window.getComputedStyle(element);
-                    element.style.transform = 'translateZ(0)';
-                    element.style.willChange = 'transform';
-                    element.style.webkitTransform = 'translate3d(0,0,0)';
-                    element.style.webkitBackfaceVisibility = 'hidden';
                     if (this.debugMode) {
-                        const afterRect = element.getBoundingClientRect();
-                        const afterStyle = window.getComputedStyle(element);
-                        console.log(`🔍 Sticky Header ${index + 1} transformation:`, {
+                        console.log(`🔍 Sticky Header ${index + 1}:`, {
                             selector: element.className,
-                            before: {
-                                rect: beforeRect,
-                                position: beforeStyle.position,
-                                zIndex: beforeStyle.zIndex,
-                                transform: beforeStyle.transform
-                            },
-                            after: {
-                                rect: afterRect,
-                                position: afterStyle.position,
-                                zIndex: afterStyle.zIndex,
-                                transform: afterStyle.transform
-                            }
+                            rect: element.getBoundingClientRect(),
+                            style: window.getComputedStyle(element)
                         });
                     }
                 });
                 trackHeadings.forEach((heading, index) => {
                     const element = heading;
-                    const beforeRect = element.getBoundingClientRect();
-                    const beforeStyle = window.getComputedStyle(element);
-                    element.style.transform = 'translateZ(0)';
-                    element.style.willChange = 'transform';
-                    element.style.webkitTransform = 'translate3d(0,0,0)';
-                    element.style.webkitBackfaceVisibility = 'hidden';
                     if (this.debugMode) {
-                        const afterRect = element.getBoundingClientRect();
-                        const afterStyle = window.getComputedStyle(element);
-                        console.log(`🔍 Track Heading ${index + 1} transformation:`, {
+                        console.log(`🔍 Track Heading ${index + 1}:`, {
                             selector: element.className,
-                            before: {
-                                rect: beforeRect,
-                                position: beforeStyle.position,
-                                zIndex: beforeStyle.zIndex,
-                                transform: beforeStyle.transform
-                            },
-                            after: {
-                                rect: afterRect,
-                                position: afterStyle.position,
-                                zIndex: afterStyle.zIndex,
-                                transform: afterStyle.transform
-                            }
+                            rect: element.getBoundingClientRect(),
+                            style: window.getComputedStyle(element)
                         });
                     }
                 });
@@ -153,27 +118,6 @@ export class MobileScrollDetector {
                     }
                 });
             }, 100);
-        }
-        // Server deployment fix: Force proper initialization on mobile
-        if (isMobile) {
-            setTimeout(() => {
-                // Force body background to prevent white block
-                document.body.style.backgroundColor = '#f9f9f9';
-                document.body.style.overflowX = 'hidden';
-                // Force container background
-                const container = document.querySelector('.container');
-                if (container) {
-                    container.style.backgroundColor = '#f9f9f9';
-                }
-                // Force columns container background
-                const columnsContainer = document.querySelector('.columns-container');
-                if (columnsContainer) {
-                    columnsContainer.style.backgroundColor = '#f9f9f9';
-                    columnsContainer.style.marginTop = '0';
-                    columnsContainer.style.paddingTop = '0';
-                }
-                console.log('🔍 Applied server deployment fixes for mobile');
-            }, 200);
         }
         // Listen for scroll events on the columns container
         this.columnsContainer.addEventListener('scroll', () => {
