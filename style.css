@@ -62,35 +62,35 @@
     }
 }
 
+/* Twin dynamic columns system */
 .columns-container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    overflow-y: auto;
-    min-height: calc(100vh - 120px); /* Adjusted for fixed headers */
-    scrollbar-width: thick;
-    scrollbar-color: #999 #f9f9f9;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+    /* Remove any potential white space */
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 120px);
 }
 
-.columns-container::-webkit-scrollbar {
-    width: 12px;
-}
-
-.columns-container::-webkit-scrollbar-thumb {
-    background-color: #999;
-    border-radius: 6px;
-}
-
-/* Column styling */
+/* Individual column styling */
 .lyrics-column,
 .translation-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    margin: 0 10px;
+    position: relative;
+    z-index: 2;
+    /* Remove margins that could cause white space */
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+    /* Ensure proper content flow */
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Heading styles - only for standalone headers (not in sticky-header) */
@@ -141,31 +141,52 @@ h2:not(.sticky-header h2):not(.track-heading) {
     margin-left: 10px;
 }
 
-/* Mobile responsive sticky header behavior */
+/* Mobile responsive behavior for twin columns */
 @media screen and (max-width: 768px) {
-    /* On mobile, both sticky headers should span full width */
+    /* Mobile columns layout */
+    .columns-container {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 0;
+        font-size: 12px;
+    }
+    
+    .lyrics-column,
+    .translation-column {
+        min-width: 90%;
+        scroll-snap-align: center;
+        margin: 0 5%;
+        flex-shrink: 0;
+        /* Ensure no white space */
+        background-color: #f9f9f9;
+        border-radius: 0;
+    }
+    
+    /* Sticky headers for mobile swiping */
     .lyrics-column .sticky-header,
     .translation-column .sticky-header {
         left: 0;
         right: 0;
         margin: 0;
         width: 100%;
-        /* Force initial positioning */
         position: fixed !important;
         top: 0 !important;
-        z-index: 9999 !important; /* Ensure highest z-index on mobile */
+        z-index: 10000 !important;
+        background-color: #f9f9f9 !important;
     }
     
     /* Default state: show lyrics column selector */
     .lyrics-column .sticky-header {
-        display: flex !important; /* Force display for lyrics column */
+        display: flex !important;
     }
     
     .translation-column .sticky-header {
         display: none;
     }
     
-    /* When lyrics column is active, show song selector */
+    /* Active column states */
     .lyrics-column.active .sticky-header {
         display: flex !important;
     }
@@ -174,7 +195,6 @@ h2:not(.sticky-header h2):not(.track-heading) {
         display: none;
     }
     
-    /* When translation column is active, show language selector */
     .translation-column.active .sticky-header {
         display: flex !important;
     }
@@ -183,11 +203,13 @@ h2:not(.sticky-header h2):not(.track-heading) {
         display: none;
     }
     
-    /* Ensure track headings also adapt to mobile */
+    /* Track headings */
     .track-heading {
         left: 0 !important;
         right: 0 !important;
         width: 100% !important;
+        z-index: 9999 !important;
+        background-color: #f9f9f9 !important;
     }
     
 
@@ -370,26 +392,8 @@ hr {
     color: #666;
 }
 
-/* Responsive design */
+/* Mobile font size adjustments */
 @media screen and (max-width: 768px) {
-    .columns-container {
-        flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: 20px 0;
-        font-size: 12px; /* Reduced by 4 points from default 16px for mobile */
-    }
-    
-    .lyrics-column,
-    .translation-column {
-        min-width: 90%;
-        scroll-snap-align: center;
-        margin: 0 5%;
-        flex-shrink: 0;
-    }
-    
-    /* Mobile-specific font size adjustments */
     .columns-container p {
         font-size: 8px; /* Reduced by 4 points from 12px */
     }
