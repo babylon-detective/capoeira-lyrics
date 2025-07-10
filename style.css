@@ -151,6 +151,11 @@ h2:not(.sticky-header h2):not(.track-heading) {
         -webkit-overflow-scrolling: touch;
         padding: 20px 0;
         font-size: 12px;
+        /* Fix for portrait orientation white block */
+        min-height: 100vh;
+        height: 100vh;
+        margin-top: 0;
+        padding-top: 0;
     }
     
     .lyrics-column,
@@ -162,6 +167,9 @@ h2:not(.sticky-header h2):not(.track-heading) {
         /* Ensure no white space */
         background-color: #f9f9f9;
         border-radius: 0;
+        /* Fix for portrait orientation */
+        height: 100%;
+        min-height: 100vh;
     }
     
     /* Sticky headers for mobile swiping */
@@ -214,17 +222,27 @@ h2:not(.sticky-header h2):not(.track-heading) {
     
 
     
-    /* Server deployment fix for white block above columns-container */
+    /* Portrait orientation fix for white block */
     body {
         background-color: #f9f9f9;
         position: relative;
         z-index: 1;
+        /* Ensure full viewport coverage in portrait */
+        min-height: 100vh;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
     }
     
     .container {
         background-color: #f9f9f9;
         position: relative;
         z-index: 2;
+        /* Ensure container fills viewport in portrait */
+        min-height: 100vh;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
     }
     
     .columns-container {
@@ -232,8 +250,11 @@ h2:not(.sticky-header h2):not(.track-heading) {
         position: relative;
         z-index: 3;
         /* Prevent white block from appearing above */
-        margin-top: 0;
-        padding-top: 0;
+        margin: 0;
+        padding: 0;
+        /* Ensure full viewport coverage in portrait */
+        min-height: 100vh;
+        height: 100vh;
     }
     
     /* Ensure sticky headers stay above any white blocks */
