@@ -184,6 +184,31 @@ export class MobileScrollDetector {
         });
       }, 100);
     }
+    
+    // Server deployment fix: Force proper initialization on mobile
+    if (isMobile) {
+      setTimeout(() => {
+        // Force body background to prevent white block
+        document.body.style.backgroundColor = '#f9f9f9';
+        document.body.style.overflowX = 'hidden';
+        
+        // Force container background
+        const container = document.querySelector('.container') as HTMLElement;
+        if (container) {
+          container.style.backgroundColor = '#f9f9f9';
+        }
+        
+        // Force columns container background
+        const columnsContainer = document.querySelector('.columns-container') as HTMLElement;
+        if (columnsContainer) {
+          columnsContainer.style.backgroundColor = '#f9f9f9';
+          columnsContainer.style.marginTop = '0';
+          columnsContainer.style.paddingTop = '0';
+        }
+        
+        console.log('🔍 Applied server deployment fixes for mobile');
+      }, 200);
+    }
 
     // Listen for scroll events on the columns container
     this.columnsContainer.addEventListener('scroll', () => {
