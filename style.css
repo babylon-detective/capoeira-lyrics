@@ -192,9 +192,37 @@ h2:not(.sticky-header h2):not(.track-heading) {
     
 
     
-    /* Minimal server deployment fix - only prevent white block */
+    /* Server deployment fix for white block above columns-container */
     body {
         background-color: #f9f9f9;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .container {
+        background-color: #f9f9f9;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .columns-container {
+        background-color: #f9f9f9;
+        position: relative;
+        z-index: 3;
+        /* Prevent white block from appearing above */
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    /* Ensure sticky headers stay above any white blocks */
+    .sticky-header {
+        z-index: 10000 !important;
+        background-color: #f9f9f9 !important;
+    }
+    
+    .track-heading {
+        z-index: 9999 !important;
+        background-color: #f9f9f9 !important;
     }
 }
 
