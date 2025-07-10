@@ -3,6 +3,7 @@ import { LyricsRenderer } from './components/LyricsRenderer';
 import { UIManager } from './components/UIManager';
 import { ScrollTracker } from './utils/scroll-tracker';
 import { MobileScrollDetector } from './utils/mobile-scroll-detector';
+import { MobileDebugLogger } from './utils/mobile-debug-logger';
 import { testFormatting } from './utils/test-formatting';
 
 export class LyricsApp {
@@ -11,6 +12,7 @@ export class LyricsApp {
   private uiManager: UIManager;
   private scrollTracker: ScrollTracker | null = null;
   private mobileScrollDetector: MobileScrollDetector | null = null;
+  private mobileDebugLogger: MobileDebugLogger | null = null;
 
   constructor() {
     this.lyricsService = new LyricsService();
@@ -25,9 +27,13 @@ export class LyricsApp {
       // Test formatting
       testFormatting();
       
-      // Load authors index first
-      await this.lyricsService.loadAuthorsIndex();
-      console.log('Authors index loaded successfully');
+      // Initialize mobile debug logger first (for debugging initialization issues)
+      this.mobileDebugLogger = new MobileDebugLogger();
+      console.log('Mobile debug logger initialized');
+      
+      // Load lyrics data (using the working method)
+      await this.lyricsService.loadData();
+      console.log('Lyrics data loaded successfully');
       
       // Populate UI with available authors
       this.uiManager.populateAuthorSelect();
@@ -40,6 +46,18 @@ export class LyricsApp {
       // Initialize mobile scroll detection
       this.mobileScrollDetector = new MobileScrollDetector();
       console.log('Mobile scroll detector initialized');
+      
+      // Add global app reference for debugging
+      (window as any).lyricsApp = this;
+      console.log('🔧 Global app reference available as window.lyricsApp');
+      
+      // Log initial analysis for debugging
+      if (this.mobileDebugLogger) {
+        setTimeout(() => {
+          console.log('🔍 Running initial layer analysis...');
+          this.mobileDebugLogger!.analyzeLayering();
+        }, 1000);
+      }
       
     } catch (error) {
       console.error('Failed to initialize app:', error);
@@ -57,6 +75,28 @@ export class LyricsApp {
     
     if (translationsContainer) {
       translationsContainer.innerHTML = `<p class="error">${message}</p>`;
+    }
+  }
+
+  // Public methods for debugging access
+  public getDebugLogger(): MobileDebugLogger | null {
+    return this.mobileDebugLogger;
+  }
+
+  public getMobileScrollDetector(): MobileScrollDetector | null {
+    return this.mobileScrollDetector;
+  }
+
+  public enableDebugMode(): void {
+    if (this.mobileDebugLogger) {
+      this.mobileDebugLogger.enable();
+      console.log('🔍 Debug mode enabled - check top-right corner for overlay');
+    }
+  }
+
+  public disableDebugMode(): void {
+    if (this.mobileDebugLogger) {
+      this.mobileDebugLogger.disable();
     }
   }
 }

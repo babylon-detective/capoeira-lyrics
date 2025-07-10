@@ -2,11 +2,11 @@
   "authors": [
     {
       "id": "palmares",
-      "name": "Palmares",
+      "name": "Angola Palmares",
       "file": "palmares_lyrics.json",
-      "description": "Palmares capoeira lyrics collection",
+      "description": "Angola Palmares capoeira lyrics collection",
       "trackCount": 3,
-      "songCount": 45
+      "songCount": 23
     },
     {
       "id": "fica",

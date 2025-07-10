@@ -3,6 +3,7 @@ export declare class MobileScrollDetector {
     private lyricsColumn;
     private translationColumn;
     private currentActiveColumn;
+    private debugMode;
     constructor();
     private fixMobileViewport;
     private initializeScrollDetection;
@@ -11,6 +12,9 @@ export declare class MobileScrollDetector {
     private setActiveColumn;
     private handleResponsiveChange;
     getCurrentActiveColumn(): 'lyrics' | 'translation';
+    enableDebugMode(): void;
+    disableDebugMode(): void;
+    logCurrentState(): void;
     destroy(): void;
 }
 //# sourceMappingURL=mobile-scroll-detector.d.ts.map

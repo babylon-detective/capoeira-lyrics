@@ -2,7 +2,7 @@
     "songs": [
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "LADAINHA",
@@ -72,7 +72,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "LOUVAÇÃO",
@@ -154,7 +154,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -248,7 +248,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -309,7 +309,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -379,7 +379,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -473,7 +473,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -537,7 +537,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "QUADRA",
@@ -625,7 +625,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
         "type": "CORRIDO",
@@ -695,7 +695,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "LADAINHA",
@@ -756,7 +756,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "LOUVAÇÃO",
@@ -820,7 +820,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -914,7 +914,7 @@
       },
      
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1007,104 +1007,104 @@
         }
       },
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
         "title": {
           "português": "PARANÁ É",
-          "english": "IT'S PARANÁ*",
+          "english": "IT'S PARANÁ",
           "español": "ES PARANÁ"
         },
         "lyrics": {
           "português": [
             "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Paraná é, Paraná é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "É Paraná é, Paraná|",
             "Paraná, Paraná, é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou-me embora, vou-me embora, Paraná|",
             "Como eu já disse que eu vou, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou-me embora prà Bahia, Paraná|",
             "Porque lá é meu lugar, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "E Paraná é, Paraná|",
             "Paraná, Paraná, é, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou dizer a minha mulher, Paraná|",
             "Capoeira me venceu, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Ela quis bater pé firme, Paraná|",
             "Isso não me aconteceu, Paraná|",
-            "Paraná é, Paraná é, Paraná|",
+            "^Paraná é, Paraná é, Paraná|",
             "Vou-me embora dia e noite, Paraná|",
             "Mas não tenho que passar, Paraná|",
-            "Paraná é, Paraná é, Paraná...|"
+            "^Paraná é, Paraná é, Paraná...|"
           ],
           "translations": {
             "english": [
               "It's Paraná, It's Paraná, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "It's Paraná, It's Paraná, Paraná|", 
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "It's Paraná, It's Paraná|",
               "Paraná, Paraná, it's Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm leaving, I'm leaving, Paraná|",
               "Like I said I would, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm leaving for Bahia, Paraná|",
               "Because that's my home, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "It's Paraná, It's Paraná|",
               "Paraná, Paraná, it's Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm going to tell my wife, Paraná|",
               "Capoeira beat me, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "She wanted to put her foot down, Paraná|",
               "But that didn't happen, Paraná|",
-              "It's Paraná, It's Paraná, Paraná|",
+              "^It's Paraná, It's Paraná, Paraná|",
               "I'm leaving day and night, Paraná|",
               "But I don't have to go through, Paraná|",
-              "It's Paraná, It's Paraná, Paraná...|"
+              "^It's Paraná, It's Paraná, Paraná...|"
             ],
             "español": [
               "Es Paraná, Es Paraná, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|", 
+              "^Es Paraná, Es Paraná, Paraná|", 
               "Es Paraná, Es Paraná, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Es Paraná, Es Paraná|",
               "Paraná, Paraná, es Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Me voy, me voy, Paraná|",
               "Como ya dije que me iba, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Me voy para Bahía, Paraná|",
               "Porque allí es mi lugar, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Es Paraná, Es Paraná|",
               "Paraná, Paraná, es Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Le voy a decir a mi mujer, Paraná|",
               "Capoeira me venció, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Ella quiso poner el pie firme, Paraná|",
               "Eso no me sucedió, Paraná|",
-              "Es Paraná, Es Paraná, Paraná|",
+              "^Es Paraná, Es Paraná, Paraná|",
               "Me voy día y noche, Paraná|",
               "Pero no tengo que pasar, Paraná|",
-              "Es Paraná, Es Paraná, Paraná...|"
+              "^Es Paraná, Es Paraná, Paraná...|"
             ]
           } 
         }
       } ,
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "CORRIDO",
@@ -1118,13 +1118,13 @@
             "Oiaiá, o senhor tá me chamando|",
             "O senhor tá me chamando, oiaiá|",
             "Me chamando pra jogar, oiaiá|",
-            "Oiaiá, o senhor tá me chamando|",
+            "^Oiaiá, o senhor tá me chamando|",
             "O senhor tá me chamando, oiaiá|", 
             "Me chamando pra jogar, oiaiá|",
-            "Oiaiá, o senhor tá me chamando|",
+            "^Oiaiá, o senhor tá me chamando|",
             "O senhor tá me chamando, oiaiá|",
             "Me chamando pra jogar, oiaiá|",
-            "Oiaiá, o senhor tá me chamando|",
+            "^Oiaiá, o senh^or tá me chamando|",
             "O senhor tá me chamando, oiaiá|",
             "Me chamando pra jogar, oiaiá...|"
           ],
@@ -1133,13 +1133,13 @@
             "Oiaiá, the master is calling me|",
             "The master is calling me, oiaiá|", 
             "Calling me to play, oiaiá|",
-            "Oiaiá, the master is calling me|",
+            "^Oiaiá, the master is calling me|",
             "The master is calling me, oiaiá|",
             "Calling me to play, oiaiá|", 
-            "Oiaiá, the master is calling me|",
+            "^Oiaiá, the master is calling me|",
             "The master is calling me, oiaiá|",
             "Calling me to play, oiaiá|",
-            "Oiaiá, the master is calling me|", 
+            "^Oiaiá, the master is calling me|", 
             "The master is calling me, oiaiá|",
             "Calling me to play, oiaiá...|"
             ],
@@ -1147,13 +1147,13 @@
             "Oiaiá, el maestro me llama|",
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá|",
-            "Oiaiá, el maestro me llama|",
+            "^Oiaiá, el maestro me llama|",
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá|",
-            "Oiaiá, el maestro me llama|", 
+            "^Oiaiá, el maestro me llama|", 
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá|",
-            "Oiaiá, el maestro me llama|",
+            "^Oiaiá, el maestro me llama|",
             "El maestro me llama, oiaiá|",
             "Me llama para jugar, oiaiá...|"
             ]
@@ -1162,7 +1162,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 2",
         "type": "QUADRA",
@@ -1232,7 +1232,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "LADAINHA",
@@ -1249,7 +1249,8 @@
             "Do gengibre do Chinatown, ora meu Deus|",
             "Aos esquilos no Parque Central|",
             "Vai andando com carinho, ora meu Deus|", 
-            "Ouvir o som do berimbau, camarada...|"
+            "Ouvir o som do berimbau|", 
+            "Camarada...|"
           ],
           "translations": {
             "english": [
@@ -1259,7 +1260,8 @@
             "From the ginger of Chinatown, oh my Lord|",
             "To the squirrels in Central Park|",
             "Walk around affectionately, oh my Lord|",
-            "Hearing the sound of the berimbau, my friend...|"
+            "Hearing the sound of the berimbau|", 
+            "My friend...|"
             ],
             "español": [
               "Nueva York es la ciudad|",
@@ -1268,14 +1270,15 @@
               "Del gengibre de Chinatown, oh mi Dios|",
               "A los ardillas en el Parque Central|",
               "Vaya andando con cariño, oh mi Dios|",
-              "Oyendo el sonido del berimbau, amigo...|" 
+              "Oyendo el sonido del berimbau|", 
+              "Amigo...|" 
             ]
           } 
         }
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "LOUVAÇÃO",
@@ -1346,7 +1349,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1416,7 +1419,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1465,7 +1468,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1563,7 +1566,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
@@ -1616,7 +1619,7 @@
       },
 
       {
-        "author": "Mestre Nô",
+        "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 3",
         "type": "CORRIDO",
