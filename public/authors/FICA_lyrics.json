@@ -6,26 +6,316 @@
       "track": "Track 1",
       "type": "LADAINHA",
       "title": {
-        "português": "EXEMPLO DE TÍTULO",
-        "english": "EXAMPLE TITLE",
-        "español": "TÍTULO DE EJEMPLO"
+        "português": "Minha mãe vou ser bombeiro",
+        "english": "My mom, I am going to be a firefighter",
+        "español": "Mi mamá va a ser bombera"
       },
       "lyrics": {
         "português": [
-          "Esta é uma linha de exemplo|",
-          "^Este é um coro de exemplo|",
-          "Outra linha normal|"
+          "Minha mãe vou ser bombeiro|",
+          "Bombeiro meu filho não|",
+          "O bombeiro apaga o fogo|",
+          "Anda com a morte na mão|",
+          "Camaradinha|"
         ],
         "translations": {
           "english": [
-            "This is an example line|",
-            "^This is an example chorus|",
-            "Another normal line|"
+            "My mom, I am going to be a firefighter|",
+            "Firefighter my son is not|",
+            "The firefighter puts out the fire|",
+            "And goes with death in his hand|",
+            "Camaradinha|"
           ],
           "español": [
-            "Esta es una línea de ejemplo|",
-            "^Este es un coro de ejemplo|",
-            "Otra línea normal|"
+            "Mi mamá va a ser bombera|",
+            "Bombera mi hijo no|",
+            "La bombera apaga el fuego|",
+            "Y va con la muerte en la mano|",
+            "Camaradinha|"
+          ]
+        }
+      }
+    },
+
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "CORRIDO",
+      "title": {
+        "português": "Paranauê paranauê Paraná",
+        "english": "Paranauê paranauê Paraná",
+        "español": "Paranauê paranauê Paraná"
+      },
+      "lyrics": {
+        "português": [
+          "Paranauê paranauê Paraná|",
+          "Minha mãe vou ser bombeiro Paraná|",
+          "Bombeiro meu filho não Paraná|",
+          "^Paranauê paranauê Paraná|",
+          "O bombeiro apaga o fogo Paraná|",
+          "Anda com a morte na mão Paraná|",
+          "^Paranauê paranauê Paraná|"
+        ],
+        "translations": {
+          "english": [
+            "Paranauê paranauê Paraná|",
+            "My mom, I am going to be a firefighter|",
+            "Firefighter my son is not|",
+            "^Paranauê paranauê Paraná|",
+            "The firefighter puts out the fire|",
+            "And goes with death in his hand|",
+            "^Paranauê paranauê Paraná|"
+          ],
+          "español": [
+            "Paranauê paranauê Paraná|",
+            "Mi mamá va a ser bombera|",
+            "Bombera mi hijo no|",
+            "^Paranauê paranauê Paraná|",
+            "La bombera apaga el fuego|",
+            "Y va con la muerte en la mano|",
+            "^Paranauê paranauê Paraná|"
+          ]
+        } 
+      }
+    },
+
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "CORRIDO",
+      "title": {
+        "português": "Oh Sim Sim Sim",
+        "english": "Oh Sim Sim Sim",
+        "español": "Oh Sim Sim Sim"
+      },
+      "lyrics": {
+        "português": [
+          "Oh sim sim sim|",
+          "Oh não não não|",
+          "Minha mãe vou ser bombeiro|",
+          "Bombeiro meu filho não|",
+          "^Oh sim sim sim|",
+          "^Oh não não não|",
+          "O bombeiro apaga o fogo|",
+          "Anda com a morte na mão|",
+          "^Oh sim sim sim|",
+          "^Oh não não não|"
+        ],
+        "translations": {
+          "english": [
+            "Oh sim sim sim|",
+            "Oh no no no|",
+            "My mom, I am going to be a firefighter|",
+            "Firefighter my son is not|",
+            "^Oh sim sim sim|", 
+            "^Oh no no no|",
+            "The firefighter puts out the fire|",
+            "And goes with death in his hand|",
+            "^Oh sim sim sim|",
+            "^Oh no no no|"
+          ],
+          "español": [
+            "Oh sim sim sim|",
+            "Oh no no no|",
+            "Mi mamá va a ser bombera|",
+            "Bombera mi hijo no|",
+            "^Oh sim sim sim|",
+            "^Oh no no no|"
+          ]
+        }
+      }
+    },
+
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "SANTA MARIA",
+      "title": {
+        "português": "",
+        "english": "",
+        "español": ""
+      },
+      "lyrics": {
+        "português": [
+          "Apanha a laranja no chão tico-tico|",
+          "Apanha a laranja no chão tico-tico|",  
+          "Apanha a laranja no chão tico-tico...|"  
+        ],
+        "translations": {
+          "english": [
+            "Pick up the orange on the ground tico-tico|",
+            "Pick up the orange on the ground tico-tico|",
+            "Pick up the orange on the ground tico-tico...|"
+          ],
+          "español": [
+            "Apanha la naranja en el suelo tico-tico|",
+            "Apanha la naranja en el suelo tico-tico|",
+            "Apanha la naranja en el suelo tico-tico...|"
+          ]
+        }
+      }
+    },
+
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "CORRIDO",
+      "title": {
+        "português": "",
+        "english": "",
+        "español": ""
+      },
+      "lyrics": {
+        "português": [
+          "Angola êê|",
+          "Angola ê Angola|",
+          "-capoeira de Angola êê|",
+          "-capoeira de Angola êá|",
+          "^Angola êê|",
+          "^Angola ê Angola |",
+          "-berimbau de angola êê|",
+          "-berimbau de Angola êá|",
+          "^Angola êê|",
+          "^Angola ê angola|",
+          "-pandeiro de angola êê|",
+          "-pandeiro de angola êá|",
+          "^Angola êê|",
+          "^Angola ê Angola|",
+          "-capoeira de Angola êê|",
+          "-capoeira de angola êá|",
+          "^Angola êê|",
+          "^Angola ê Angola|" 
+        ],
+        "translations": {
+          "english": [
+            "Angola êê|",
+          "Angola ê Angola|",
+          "-capoeira de Angola êê|",
+          "-capoeira de Angola êá|",
+          "^Angola êê|",
+          "^Angola ê Angola |",
+          "-berimbau de angola êê|",
+          "-berimbau de Angola êá|",
+          "^Angola êê|",
+          "^Angola ê angola|",
+          "-pandeiro de angola êê|",
+          "-pandeiro de angola êá|",
+          "^Angola êê|",
+          "^Angola ê Angola|",
+          "-capoeira de Angola êê|",
+          "-capoeira de angola êá|",
+          "^Angola êê|",
+          "^Angola ê Angola|"
+          ],
+          "español": [
+            "Angola êê|",
+            "Angola ê Angola|",
+            "-capoeira de Angola êê|",
+            "-capoeira de Angola êá|",
+            "^Angola êê|",
+            "^Angola ê Angola|",
+            "-berimbau de Angola êê|",
+            "-berimbau de Angola êá|",
+            "^Angola êê|",
+            "^Angola ê Angola|",
+            "-pandeiro de Angola êê|",
+            "-pandeiro de Angola êá|",
+            "^Angola êê|",
+            "^Angola ê Angola|",
+            "-capoeira de Angola êê|",
+            "-capoeira de Angola êá|",
+            "^Angola êê|",
+            "^Angola ê Angola|"
+          ]   
+        } 
+      }
+    },
+
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "CORRIDO",
+      "title": {
+        "português": "",
+        "english": "",
+        "español": ""
+      },
+      "lyrics": {
+        "português": [
+          "Vadeia homem, menino e mulher|",
+          "-nessa roda de angola só não joga quem não quer |",
+          "^Vadeia homem, menino e mulher|",
+          "-capoeira de angola só não vadeia quem não quer |",
+          "^Vadeia homem, menino e mulher|",
+          "-berimbau já tá chamando, eu vou lá se Deus quiser|"
+        ],
+        "translations": {
+          "english": [
+            "Play man, child and woman|",
+            "-in this Angola roda only those who don't want to don't play|",
+            "^Play man, child and woman|", 
+            "-in capoeira Angola only those who don't want to don't play|",
+            "^Play man, child and woman|",
+            "-the berimbau is calling, I'll go there God willing|"
+          ],
+          "español": [
+            "Juega hombre, niño y mujer|",
+            "-en esta roda de Angola solo no juega quien no quiere|",
+            "^Juega hombre, niño y mujer|",
+            "-en capoeira Angola solo no juega quien no quiere|",
+            "^Juega hombre, niño y mujer|",
+            "-el berimbau está llamando, iré allí si Dios quiere|"
+          ]
+        }
+      }
+    },
+
+    {
+      "author": "FICA",
+      "album": "Album Example",
+      "track": "Track 1",
+      "type": "CORRIDO",
+      "title": {
+        "português": "",
+        "english": "",
+        "español": ""
+      },
+      "lyrics": {
+        "português": [
+          "Berimbau bateu|",
+          "Angoleiro me chamou|",
+          "Vou me embora que é noite|",
+          "Eu não posso demorar|",
+          "^Eu não posso demorar|",
+          "^Eu não posso demorar|",
+          "^Berimbau ta me chamando|",
+          "^Eu não posso demorar|"
+        ],
+        "translations": {
+          "english": [
+            "The berimbau played|",
+            "The angoleiro called me|", 
+            "I must go because it's night|",
+            "I cannot delay|",
+            "^I cannot delay|",
+            "^I cannot delay|",
+            "^The berimbau is calling me|",
+            "^I cannot delay|"
+          ],
+          "español": [
+            "El berimbau sonó|",
+            "El angoleiro me llamó|",
+            "Me voy porque es de noche|", 
+            "No puedo demorar|",
+            "^No puedo demorar|",
+            "^No puedo demorar|",
+            "^El berimbau me está llamando|",
+            "^No puedo demorar|"
           ]
         }
       }

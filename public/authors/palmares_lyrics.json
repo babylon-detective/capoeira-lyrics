@@ -75,7 +75,7 @@
         "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
-        "type": "LOUVAÇÃO",
+        "type": "CORRIDO",
         "title": {
           "português": "",
           "english": "",
@@ -1708,6 +1708,62 @@
             "^Llegó de Angola|",
             "^Dios salve al negro|",
             "^El negro nagô...|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Angola Palmares",
+        "album": "Album Name",
+        "track": "Track 4",
+        "type": "LADAINHA",
+        "title": {
+          "português": "GALINA DE UM OLHO Só",
+          "english": "ONE EYED CHICKEN",
+          "español": "GALINA DE UN OJO SOLO"
+        },
+        "lyrics": {
+          "português": [
+          "Galinha de um olho só|",
+          "Galinha de um olho só|",
+          "Papagaio falador|",
+          "Caveira quem te matou?|",
+          "Foi a língua meu senhor|",
+          "Se você falou de mim|",
+          "Se você falou de mim|",
+          "Falou bem ou falou mal|",
+          "Mas o importante agora|",
+          "Mas o importante agora|",
+          "É que você falou demais camaradinho|",
+          "Galina de um olho so|"
+          ],
+          "translations": {
+            "english": [
+            "One eyed chicken|",
+            "One eyed chicken|",
+            "Talking parrot|",
+            "Skull who killed you?|",
+            "Was it the tongue my lord|",
+            "If you spoke of me|",
+            "If you spoke of me|",
+            "Well or badly|",
+            "But the important thing now|",
+            "Is that you spoke too much my friend|",
+            "One eyed chicken|"
+            ],
+            "español": [
+            "Gallina de un ojo solo|",
+            "Gallina de un ojo solo|",
+            "Papagayo hablador|",
+            "Caveira quien te mató?|",
+            "Fue la lengua mi señor|",
+            "Si hablaste de mí|",
+            "Si hablaste de mí|",
+            "Bien o mal|",
+            "Pero lo importante ahora|",
+            "Es que hablaste demasiado camarada|",
+            "Gallina de un ojo solo|"
             ]
           } 
         }
