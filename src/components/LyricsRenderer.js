@@ -117,10 +117,11 @@ export class LyricsRenderer {
                 const songId = `trans-song-${index}-${trackId}`;
                 // Validate song has the required language data
                 if (!validateSongForLanguage(song, language)) {
+                    const titleHtml = song.title.português ? `<b>${song.title.português}</b><br>` : '';
                     translationsHTML += `
             <div class="translation-section" id="${songId}">
               <i class="song-type">${song.type}</i><br>
-              <b>${song.title.português}</b><br>
+              ${titleHtml}
               <p class="error">Translation not available for ${language}</p>
             </div>
             <hr>
@@ -147,10 +148,11 @@ export class LyricsRenderer {
                     lyrics = ['Translation not available'];
                     title = song.title.português;
                 }
+                const titleHtml = title ? `<b>${title}</b><br><br>` : '';
                 translationsHTML += `
           <div class="translation-section" id="${songId}">
             <i class="song-type">${song.type}</i><br><br>
-            <b>${title}</b><br><br>
+            ${titleHtml}
             ${this.lyricsService.formatLyrics(lyrics)}
           </div>
           <hr>

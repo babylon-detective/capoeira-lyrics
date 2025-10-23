@@ -181,10 +181,11 @@ export class LyricsRenderer {
           title = song.title.português;
         }
         
+        const titleHtml = title ? `<b>${title}</b><br><br>` : '';
         translationsHTML += `
           <div class="translation-section" id="${songId}">
             <i class="song-type">${song.type}</i><br><br>
-            <b>${title}</b><br><br>
+            ${titleHtml}
             ${this.lyricsService.formatLyrics(lyrics)}
           </div>
           <hr>
