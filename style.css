@@ -90,7 +90,7 @@
     border-radius: 0;
     /* Ensure proper content flow */
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: visible; /* Allow shadows to extend beyond column boundaries */
 }
 
 /* Heading styles - only for standalone headers (not in sticky-header) */
@@ -130,7 +130,7 @@ h2:not(.sticky-header h2):not(.track-heading) {
 
 /* Position sticky headers to align with their respective columns */
 .lyrics-column .sticky-header {
-    left: 20px;
+    left: 18px;
     right: 50%;
     margin-right: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
