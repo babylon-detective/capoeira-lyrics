@@ -90,7 +90,7 @@
     border-radius: 0;
     /* Ensure proper content flow */
     overflow-y: auto;
-    overflow-x: visible; /* Allow shadows to extend beyond column boundaries */
+    overflow-x: hidden;
 }
 
 /* Heading styles - only for standalone headers (not in sticky-header) */
@@ -112,9 +112,11 @@ h2:not(.sticky-header h2):not(.track-heading) {
     background-color: #f9f9f9;
     z-index: 1000; /* Increased z-index for mobile */
     padding: 12px 20px;
+    border-bottom: 2px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 0;
     min-height: 60px;
     box-sizing: border-box;
@@ -128,7 +130,7 @@ h2:not(.sticky-header h2):not(.track-heading) {
 
 /* Position sticky headers to align with their respective columns */
 .lyrics-column .sticky-header {
-    left: 18px;
+    left: 20px;
     right: 50%;
     margin-right: 10px;
 }
