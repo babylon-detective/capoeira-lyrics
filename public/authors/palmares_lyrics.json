@@ -75,7 +75,7 @@
         "author": "Angola Palmares",
         "album": "Album Name",
         "track": "Track 1",
-        "type": "CORRIDO",
+        "type": "LOUVAÇÃO",
         "title": {
           "português": "",
           "english": "",
@@ -1764,6 +1764,100 @@
             "Pero lo importante ahora|",
             "Es que hablaste demasiado camarada|",
             "Gallina de un ojo solo|"
+            ]
+          } 
+        }
+      },
+
+      {
+        "author": "Angola Palmares",
+        "album": "Album Name",
+        "track": "Track 5",
+        "type": "CORRIDO",
+        "title": {
+          "português": "VAMOS TRABALHAR",
+          "english": "LET'S WORK",
+          "español": "VAMOS TRABAJAR"
+        },
+        "lyrics": {
+          "português": [
+          "Vamos trabalhar|",
+          "vamos plantar dendê|",
+          "Na roda de capoeira|",
+          "negro joga pra valer|",
+          "Vamos trabalhar|",
+          "vamos plantar dendê|", 
+          "Na roda de capoeira|",
+          "negro joga pra valer|",
+          "Quando eu era escravizado|",
+          "não tinha sossego não|",
+          "acorrentado e chicoteado|",
+          "no tempo da escravidão|",
+          "Vamos trabalhar|",
+          "vamos plantar dendê|",
+          "Na roda de capoeira|", 
+          "negro joga pra valer|",
+          "Trabalhava no arroz|",
+          "trabalhava no cinzal|",
+          "Trabalhava todo dia|",
+          "Dentro do canavial|",
+          "Vamos trabalhar|",
+          "vamos plantar dendê|",
+          "Na roda de capoeira|",
+          "negro joga pra valer|"
+          ],
+          "translations": {
+            "english": [
+            "Let's work|",
+            "let's plant oil palm|",
+            "In the capoeira circle|",
+            "black people play for real|",
+            "Let's work|",
+            "let's plant oil palm|",
+            "In the capoeira circle|",
+            "black people play for real|",
+            "When I was enslaved|",
+            "I had no peace|",
+            "chained and whipped|",
+            "during the time of slavery|",
+            "Let's work|",
+            "let's plant oil palm|",
+            "In the capoeira circle|",
+            "black people play for real|",
+            "I worked in the rice fields|",
+            "I worked in the ash fields|",
+            "I worked every day|",
+            "In the sugarcane fields|",
+            "Let's work|",
+            "let's plant oil palm|",
+            "In the capoeira circle|",
+            "black people play for real|"
+            ],
+            "español": [
+            "A trabajar|",
+            "A plantar palma aceitera|",
+            "En el círculo de capoeira|",
+            "los negros juegan de verdad|",
+            "A trabajar|",
+            "A plantar palma aceitera|",
+            "En el círculo de capoeira|", 
+            "los negros juegan de verdad|",
+            "Cuando estaba esclavizado|",
+            "no tenía paz|",
+            "encadenado y azotado|",
+            "durante la época de la esclavitud|",
+            "A trabajar|",
+            "A plantar palma aceitera|",
+            "En el círculo de capoeira|",
+            "los negros juegan de verdad|",
+            "Trabajé en los arrozales|",
+            "trabajé en los campos de fresno|",
+            "trabajé todos los días|",
+            "en los cañaverales|",
+            "A trabajar|",
+            "A plantar palma aceitera|",
+            "En el círculo de capoeira|",
+            "los negros juegan de verdad|"
             ]
           } 
         }
