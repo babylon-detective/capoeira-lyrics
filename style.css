@@ -116,7 +116,6 @@ h2:not(.sticky-header h2):not(.track-heading) {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 0;
     min-height: 60px;
     box-sizing: border-box;
@@ -133,14 +132,12 @@ h2:not(.sticky-header h2):not(.track-heading) {
     left: 18px;
     right: 50%;
     margin-right: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .translation-column .sticky-header {
     left: 50%;
     right: 20px;
     margin-left: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Mobile responsive behavior for twin columns */
