@@ -112,7 +112,6 @@ h2:not(.sticky-header h2):not(.track-heading) {
     background-color: #f9f9f9;
     z-index: 1000; /* Increased z-index for mobile */
     padding: 12px 20px;
-    border-bottom: 2px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
