@@ -70,10 +70,11 @@ export class LyricsRenderer {
       
       trackGroups[trackName].forEach((song, index) => {
         const songId = `lyrics-song-${index}-${trackId}`;
+        const titleHtml = song.title.português ? `<b>${song.title.português}</b><br><br>` : '';
         lyricsHTML += `
           <div class="song-section" id="${songId}">
             <i class="song-type">${song.type}</i><br><br>
-            <b>${song.title.português}</b><br><br>
+            ${titleHtml}
             ${this.lyricsService.formatLyrics(song.lyrics.português)}
           </div>
           <hr>
